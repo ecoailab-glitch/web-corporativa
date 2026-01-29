@@ -4,6 +4,8 @@ import ServiceCard from '@/components/ServiceCard'
 import BenefitsList from '@/components/BenefitsList'
 import CaseStudy from '@/components/CaseStudy'
 import Testimonial from '@/components/Testimonial'
+import Schema from '@/components/Schema'
+import { organizationSchema } from '@/lib/schema'
 
 export default function Home() {
   const services = [
@@ -66,6 +68,9 @@ export default function Home() {
         }}
         backgroundImage="linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
       />
+
+      {/* Schema Organization */}
+      <Schema schema={organizationSchema()} />
 
       {/* El Problema */}
       <section className="section section-light">

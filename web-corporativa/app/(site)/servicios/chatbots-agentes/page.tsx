@@ -3,6 +3,8 @@ import Link from 'next/link'
 import Hero from '@/components/Hero'
 import BenefitsList from '@/components/BenefitsList'
 import FAQ from '@/components/FAQ'
+import Schema from '@/components/Schema'
+import { serviceSchema, faqPageSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Chatbots y Agentes IA | Soporte 24/7 | CUSTOM AI LAB SOLUTIONS',
@@ -203,6 +205,50 @@ export default function ChatbotsAgentesPage() {
           </Link>
         </div>
       </section>
+
+      {/* Service Schema */}
+      <Schema
+        schema={serviceSchema(
+          'Chatbots y Agentes IA',
+          'Chatbots y agentes inteligentes para soporte 24/7. 80%+ de resolución automática.',
+          'https://customailab.com/servicios/chatbots-agentes'
+        )}
+      />
+
+      {/* FAQ Schema */}
+      <Schema
+        schema={faqPageSchema([
+          {
+            question: '¿Cuál es el costo de un chatbot IA?',
+            answer:
+              'Desde €8K para chatbots básicos a €40K+ para agentes complejos multi-canal. Hosting incluido.',
+          },
+          {
+            question: '¿Cuánto tiempo toma desarrollar el chatbot?',
+            answer: '8-12 semanas. MVP en 4 semanas. Optimización iterativa después.',
+          },
+          {
+            question: '¿Soporta varios idiomas?',
+            answer:
+              'Sí. Soportamos 10+ idiomas. Traducción automática + contexto cultural.',
+          },
+          {
+            question: '¿Se integra con nuestro CRM/ticketing?',
+            answer:
+              'Sí. Integramos con Zendesk, Freshdesk, Salesforce, HubSpot, sistemas custom.',
+          },
+          {
+            question: '¿Qué sucede si el chatbot no entiende?',
+            answer:
+              'Escala automáticamente a agente humano. Sin pérdida de contexto. Perfecto para casos complejos.',
+          },
+          {
+            question: '¿Cuál es el ahorro típico?',
+            answer:
+              'Reducción de costos de soporte: 40-60%. Mejora de satisfacción: +25%. Resolución de tickets: -3 horas promedio.',
+          },
+        ])}
+      />
     </div>
   )
 }

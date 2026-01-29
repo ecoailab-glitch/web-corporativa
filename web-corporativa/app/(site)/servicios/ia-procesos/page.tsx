@@ -3,6 +3,8 @@ import Link from 'next/link'
 import Hero from '@/components/Hero'
 import BenefitsList from '@/components/BenefitsList'
 import FAQ from '@/components/FAQ'
+import Schema from '@/components/Schema'
+import { serviceSchema, faqPageSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Automatización con IA | Procesos Inteligentes | CUSTOM AI LAB SOLUTIONS',
@@ -205,6 +207,52 @@ export default function IAProcesoPage() {
           </Link>
         </div>
       </section>
+
+      {/* Service Schema */}
+      <Schema
+        schema={serviceSchema(
+          'Automatización de Procesos con IA',
+          'Automatiza procesos manuales 24/7. ROI en 90 días. Casos en fintech, retail, manufactura.',
+          'https://customailab.com/servicios/ia-procesos'
+        )}
+      />
+
+      {/* FAQ Schema */}
+      <Schema
+        schema={faqPageSchema([
+          {
+            question: '¿Cuánto cuesta la automatización de procesos?',
+            answer:
+              'El costo varía según complejidad. Desde €5K para procesos simples a €50K+ para orquestaciones complejas. ROI típico: 6-18 meses.',
+          },
+          {
+            question: '¿Cuánto tiempo toma implementar?',
+            answer:
+              'De 4-12 semanas según el alcance. MVP funcional en 4 semanas. Optimización y escalado posterior.',
+          },
+          {
+            question: '¿Se integra con mis sistemas legacy?',
+            answer:
+              'Sí. Trabajamos con ERP, CRM, bases de datos antiguas. API, web scraping, RPA según sea necesario.',
+          },
+          {
+            question: '¿Qué ROI puedo esperar?',
+            answer:
+              'Ahorro típico: 40-60% en costos operacionales. Reducción de errores: 90%+. Tiempo de procesamiento: -70%.',
+          },
+          {
+            question: '¿Necesito equipo técnico interno?',
+            answer:
+              'No. Nosotros manejamos la implementación. Te capacitamos para mantenimiento básico.',
+          },
+          {
+            question: '¿Hay soporte post-implementación?',
+            answer:
+              'Sí. 6 meses de soporte técnico incluido. Monitoreo, ajustes, optimizaciones continuas.',
+          },
+        ])}
+      />
     </div>
   )
+}
 }

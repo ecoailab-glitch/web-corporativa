@@ -3,6 +3,8 @@ import Link from 'next/link'
 import Hero from '@/components/Hero'
 import BenefitsList from '@/components/BenefitsList'
 import FAQ from '@/components/FAQ'
+import Schema from '@/components/Schema'
+import { serviceSchema, faqPageSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Desarrollo Web y App con IA | CUSTOM AI LAB SOLUTIONS',
@@ -203,6 +205,51 @@ export default function DesarrolloWebAppIAPage() {
           </Link>
         </div>
       </section>
+
+      {/* Service Schema */}
+      <Schema
+        schema={serviceSchema(
+          'Desarrollo Web y App con IA',
+          'MVP en 4-6 semanas. Next.js, React, Python, Node.js. Cloud-native. Escalable.',
+          'https://customailab.com/servicios/desarrollo-web-app-ia'
+        )}
+      />
+
+      {/* FAQ Schema */}
+      <Schema
+        schema={faqPageSchema([
+          {
+            question: '¿Cuál es el costo de desarrollar una app con IA?',
+            answer:
+              'MVP: €15-30K (4-6 semanas). Producto completo: €50-150K+. Depende del scope.',
+          },
+          {
+            question: '¿Cuánto tiempo toma el MVP?',
+            answer:
+              '4-6 semanas. Funcionalidad core + UI básica. Perfecto para validar mercado.',
+          },
+          {
+            question: '¿Qué tecnología usan?',
+            answer:
+              'Next.js/React (frontend), Node.js/Python (backend), PostgreSQL/MongoDB (BD), AWS/Azure (cloud).',
+          },
+          {
+            question: '¿Me transferen el código?',
+            answer:
+              'Sí. Código limpio, documentado, con tests. Puedes mantenerlo internamente o contratarnos.',
+          },
+          {
+            question: '¿Hacen mantenimiento post-lanzamiento?',
+            answer:
+              'Sí. Mantenimiento, bugfixes, escalado, optimización. Planes desde €1K/mes.',
+          },
+          {
+            question: '¿Es cloud-native?',
+            answer:
+              'Sí. Arquitectura serverless, auto-scaling, global CDN. Producción-ready desde el día 1.',
+          },
+        ])}
+      />
     </div>
   )
 }
