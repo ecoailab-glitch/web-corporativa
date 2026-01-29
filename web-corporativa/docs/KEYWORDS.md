@@ -23,42 +23,95 @@
 
 ---
 
-## 🔍 Keywords Principales
+## 🔍 Keywords Específicos por Servicio
 
-### Nivel 1: Servicios (Alto valor)
-```
-- Implementación IA procesos
-- Automatización con IA
-- IA para empresas
-- Consultoría IA
-- Soluciones IA personalizadas
-- Chatbot empresarial
-- Agentes IA
-- Desarrollo web con IA
-- Aplicaciones inteligentes
-- Transformación digital IA
-```
+### IA en Procesos (20 keywords - Intención Comercial)
 
-### Nivel 2: Específicos (Segmentación)
-```
-- IA en automatización de procesos
-- IA en atención al cliente
-- IA en ventas
-- IA en recursos humanos
-- Chatbot para servicio al cliente
-- RPA + IA
-- Machine Learning en procesos
-- IA sin código
-```
+**Alto valor (transaccional):**
+1. Automatización con IA procesos empresariales
+2. Implementación RPA + IA
+3. Software automatización inteligente
+4. IA para optimizar procesos
+5. Consultoría automatización con IA
+6. Solución automatización documentos IA
+7. IA procesamiento datos automático
 
-### Nivel 3: Largo plazo / Content
-```
-- Casos de uso IA empresas
-- Cómo implementar IA
-- ROI de IA en negocios
-- Mejores prácticas IA
-- Agentes IA explicados
-```
+**Vertical-específicos (buyer intent):**
+8. Automatización aprobación créditos IA
+9. IA procesamiento facturas
+10. Clasificación automática órdenes IA
+11. Validación documentos inteligencia artificial
+12. IA scoring leads automático
+13. Detección fraude IA automática
+14. Extracción datos OCR + IA
+
+**Comparación/Búsqueda de soluciones:**
+15. Alternativa a RPA tradicional
+16. RPA vs IA procesos
+17. Herramientas automatización inteligente
+18. Implementar IA en empresa
+19. ROI automatización IA procesos
+20. Costo implementación IA procesos
+
+---
+
+### Chatbots y Agentes IA (20 keywords)
+
+**Alto valor (transaccional):**
+1. Chatbot empresarial inteligente
+2. Agente IA soporte cliente
+3. Desarrollo chatbot conversacional
+4. Chatbot con inteligencia artificial
+5. Agentes IA para empresas
+6. Servicio cliente 24/7 chatbot
+7. Implementación chatbot IA
+
+**Vertical-específicos:**
+8. Chatbot atención cliente retail
+9. Agente IA fintech consultas
+10. Chatbot SaaS onboarding automático
+11. Chatbot ecommerce productos
+12. Agente IA recursos humanos
+13. Chatbot soporte técnico inteligente
+14. Agente IA citas médicas
+
+**Comparación/Búsqueda:**
+15. Chatbot vs agente IA
+16. Mejores plataformas chatbot IA
+17. Costo implementación chatbot empresarial
+18. Agentes conversacionales mejora servicio
+19. Chatbot que entienda contexto
+20. ROI chatbot inteligencia artificial
+
+---
+
+### Desarrollo Web/App IA (20 keywords)
+
+**Alto valor (transaccional):**
+1. Desarrollo web IA integrada
+2. Aplicación móvil con inteligencia artificial
+3. Desarrollo SaaS con IA
+4. Crear app recomendaciones IA
+5. Desarrollo producto ML integrado
+6. Web app búsqueda semántica IA
+7. MVP desarrollo IA rápido
+
+**Vertical-específicos:**
+8. App fintech análisis predictivo IA
+9. Marketplace matching inteligente IA
+10. Plataforma ecommerce recomendaciones IA
+11. App salud diagnóstico IA
+12. Desarrollo CRM inteligencia artificial
+13. ERP con IA integrada
+14. Dashboard análisis datos IA
+
+**Comparación/Búsqueda:**
+15. Agencia desarrollo apps IA
+16. Stack tecnológico desarrollo IA
+17. Costo desarrollar app inteligencia artificial
+18. Cuánto tarda desarrollo SaaS IA
+19. Integrar IA en aplicación existente
+20. Best practices desarrollo ML producción
 
 ---
 

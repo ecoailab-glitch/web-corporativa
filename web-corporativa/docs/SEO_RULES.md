@@ -110,6 +110,103 @@
 
 ---
 
+## 📐 Estructura H1/H2 Específica por Página
+
+### Home (/)
+```
+H1: Automatiza tu empresa con IA. Reduce costos, genera ingresos.
+  H2: El problema: Tu empresa se queda atrás con procesos manuales
+  H2: Nuestra solución: IA que funciona. Desde el día 1.
+  H2: Cómo funciona: 3 pasos hacia la transformación
+  H2: Resultado: Qué consigues implementando IA con nosotros
+  H2: Servicios: Nuestro expertise
+  H2: Por qué EcoAI Lab: Casos de éxito
+  H2: Preguntas frecuentes
+  H2: ¿Listo para empezar?
+```
+
+### /servicios (Índice)
+```
+H1: Servicios de IA para empresas
+  H2: 1. Automatización inteligente de procesos
+  H2: 2. Agentes IA conversacionales 24/7
+  H2: 3. Desarrollo web y app con IA integrada
+  H2: Por qué elegir EcoAI Lab
+  H2: Proceso: De la idea a la producción
+  H2: Preguntas frecuentes
+```
+
+### /servicios/ia-procesos
+```
+H1: Automatiza procesos empresariales con IA
+  H2: El problema: Tareas manuales que consumen recursos
+  H2: Nuestra solución: Automación inteligente 24/7
+  H2: Beneficios principales
+  H2: Cómo funciona: Integración sin complejidad
+  H2: Casos de éxito (o sector-específicos)
+  H2: Resultados: ROI medible en 90 días
+  H2: Preguntas frecuentes
+  H2: ¿Listo para empezar? → CTA Auditoría
+```
+
+### /servicios/chatbots-agentes
+```
+H1: Agentes IA que atienden tu negocio 24/7
+  H2: El problema: Saturación de tickets, costo por contacto alto
+  H2: Nuestra solución: Agentes conversacionales que resuelven realmente
+  H2: Beneficios principales
+  H2: Cómo funciona: Integración con tu CRM/API
+  H2: Casos de éxito (o industria-específicos)
+  H2: Resultados: 60-80% de consultas resueltas automáticamente
+  H2: Preguntas frecuentes
+  H2: ¿Listo para empezar? → CTA Demostración
+```
+
+### /servicios/desarrollo-web-app-ia
+```
+H1: Aplicaciones inteligentes. Desde cero o en tu producto.
+  H2: El problema: Competidores con IA ya te llevan ventaja
+  H2: Nuestra solución: IA embedded en tu aplicación
+  H2: Beneficios principales
+  H2: Cómo funciona: Stack moderno, deployment en 4-6 semanas
+  H2: Casos de éxito (o ejemplos de features IA)
+  H2: Resultados: Users happier, retention +30-50%
+  H2: Preguntas frecuentes
+  H2: ¿Listo para empezar? → CTA Consulta
+```
+
+### /sobre-nosotros
+```
+H1: Equipo especializado en IA práctica
+  H2: Nuestra historia
+  H2: Misión y valores
+  H2: El equipo: Quiénes somos
+  H2: Experiencia y casos
+  H2: Por qué confiar en nosotros
+  H2: Contacto
+```
+
+### /casos (o /metodologia)
+```
+H1: Casos de éxito: Cómo implementamos IA
+  H2: Metodología: De la auditoría a la producción
+  H2: Caso 1: [Sector] - Resultado X
+  H2: Caso 2: [Sector] - Resultado X
+  H2: Caso 3: [Sector] - Resultado X
+  H2: Próximos pasos
+```
+
+### /contacto
+```
+H1: Solicita tu auditoría IA gratuita (15 min)
+  H2: Cómo te ayudamos
+  H2: Formulario de contacto (form)
+  H2: Información de contacto (email, teléfono)
+  H2: Preguntas frecuentes
+```
+
+---
+
 ## Tracking y Analytics
 - ✅ Google Analytics 4
 - ✅ Google Search Console
