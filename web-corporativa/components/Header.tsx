@@ -8,16 +8,20 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <Link href="/">EcoAI Lab</Link>
+          <Link href="/">CUSTOM AI LAB</Link>
         </div>
 
         <nav className={styles.nav}>
+          <Link href="/">Home</Link>
           <Link href="/servicios">Servicios</Link>
+          <Link href="/casos">Casos</Link>
           <Link href="/sobre-nosotros">Sobre Nosotros</Link>
           <Link href="/contacto">Contacto</Link>
         </nav>
 
-        <button className={styles.cta}>Solicita Auditoría</button>
+        <Link href="/contacto" className={styles.cta} style={{ textDecoration: 'none' }}>
+          Solicita Auditoría
+        </Link>
       </div>
     </header>
   )

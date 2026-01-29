@@ -29,6 +29,9 @@ export default function Footer() {
             <h3>Empresa</h3>
             <ul>
               <li>
+                <Link href="/casos">Casos de Éxito</Link>
+              </li>
+              <li>
                 <Link href="/sobre-nosotros">Sobre Nosotros</Link>
               </li>
               <li>
