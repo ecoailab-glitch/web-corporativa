@@ -7,13 +7,39 @@
 
 ## 📋 Tabla de Contenidos
 
-1. [Value Proposition](#value-proposition)
-2. [Home Copy](#home-copy)
-3. [Servicios](#servicios)
-4. [Casos de Éxito](#casos-de-éxito)
-5. [Sobre Nosotros](#sobre-nosotros)
-6. [Preguntas Frecuentes](#preguntas-frecuentes)
-7. [Testimonios](#testimonios)
+1. [Contexto de la Empresa](#contexto-de-la-empresa)
+2. [Value Proposition](#value-proposition)
+3. [Home Copy](#home-copy)
+4. [Servicios](#servicios)
+5. [Casos de Éxito](#casos-de-éxito)
+6. [Sobre Nosotros](#sobre-nosotros)
+7. [Preguntas Frecuentes](#preguntas-frecuentes)
+8. [Testimonios](#testimonios)
+
+---
+
+## Contexto de la Empresa
+
+### Tipo de Empresa
+- **Naturaleza:** Startup / Empresa tecnológica
+- **Especialización:** Soluciones de Inteligencia Artificial
+
+### Servicios Principales
+1. ✅ Implementación de IA en procesos empresariales (automatización, optimización)
+2. ✅ Desarrollo de chatbots y agentes IA (conversacionales, inteligentes)
+3. ✅ Desarrollo web y aplicaciones con integración de IA
+4. ✅ Diseño e implementación de soluciones IA desde cero (custom)
+
+### Objetivo del Sitio Web
+- 🎯 **Posicionamiento en Google** (SEO técnico + contenido de valor)
+- 🎯 **Generación de leads cualificados** (Auditoría IA gratuita)
+- 🎯 **Refuerzo de credibilidad técnica** (casos, equipo, expertise)
+- 🎯 **Escalabilidad** (sin rehacer la base)
+
+### Target Audience
+**Primario:** Empresas medianas-grandes (50-500 empleados)  
+**Secundario:** Emprendedores, startups tech  
+**Sector:** Diversos (fintech, retail, manufactura, servicios)
 
 ---
 
@@ -24,6 +50,12 @@
 ```
 [PENDIENTE - Contenido de Manus]
 ```
+
+**Ej. de estructura esperada:**
+- ¿Qué problema resuelven?
+- ¿Por qué ustedes vs competencia?
+- ¿Qué hace diferente su enfoque?
+- ¿ROI / Beneficios cuantificables?
 
 ---
 
