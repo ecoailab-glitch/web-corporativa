@@ -5,7 +5,7 @@ import BenefitsList from '@/components/BenefitsList'
 import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
-  title: 'Chatbots y Agentes IA | Soporte 24/7 | EcoAI Lab',
+  title: 'Chatbots y Agentes IA | Soporte 24/7 | CUSTOM AI LAB SOLUTIONS',
   description: 'Agentes conversacionales inteligentes. 60-80% de consultas resueltas automáticamente. Soporte 24/7.',
 }
 

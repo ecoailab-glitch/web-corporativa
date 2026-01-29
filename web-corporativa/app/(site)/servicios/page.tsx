@@ -3,7 +3,7 @@ import Hero from '@/components/Hero'
 import ServiceCard from '@/components/ServiceCard'
 
 export const metadata: Metadata = {
-  title: 'Servicios IA | EcoAI Lab',
+  title: 'Servicios IA | CUSTOM AI LAB SOLUTIONS',
   description: 'Automatización, chatbots y desarrollo web con IA. Tres servicios, un objetivo: transformar tu negocio.',
 }
 

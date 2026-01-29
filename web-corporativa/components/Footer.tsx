@@ -54,7 +54,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.bottom}>
-          <p>&copy; {currentYear} EcoAI Lab. Todos los derechos reservados.</p>
+          <p>&copy; {currentYear} CUSTOM AI LAB SOLUTIONS. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

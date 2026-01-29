@@ -5,7 +5,7 @@ import BenefitsList from '@/components/BenefitsList'
 import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
-  title: 'Desarrollo Web y App con IA | EcoAI Lab',
+  title: 'Desarrollo Web y App con IA | CUSTOM AI LAB SOLUTIONS',
   description: 'Aplicaciones inteligentes. Desde cero o integradas en tu producto. MVP en 4-6 semanas.',
 }
 

@@ -3,7 +3,7 @@ import Hero from '@/components/Hero'
 import CaseStudy from '@/components/CaseStudy'
 
 export const metadata: Metadata = {
-  title: 'Casos de Éxito | EcoAI Lab',
+  title: 'Casos de Éxito | CUSTOM AI LAB SOLUTIONS',
   description: 'Proyectos reales con ROI comprobado. Automatización, chatbots, desarrollo web con IA.',
 }
 

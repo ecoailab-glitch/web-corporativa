@@ -5,7 +5,7 @@ import BenefitsList from '@/components/BenefitsList'
 import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
-  title: 'Automatización con IA | Procesos Inteligentes | EcoAI Lab',
+  title: 'Automatización con IA | Procesos Inteligentes | CUSTOM AI LAB SOLUTIONS',
   description:
     'Automatiza procesos manuales 24/7. ROI en 90 días. Casos en fintech, retail, manufactura.',
 }

@@ -86,7 +86,7 @@ export default function Home() {
         <div className="container">
           <h2>IA que funciona. Desde el día 1.</h2>
           <p>
-            EcoAI Lab implementa soluciones IA que se integran con tus sistemas existentes y
+            CUSTOM AI LAB SOLUTIONS implementa soluciones IA que se integran con tus sistemas existentes y
             generan ROI en 3-6 meses.
           </p>
 

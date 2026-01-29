@@ -3,7 +3,7 @@ import Hero from '@/components/Hero'
 import BenefitsList from '@/components/BenefitsList'
 
 export const metadata: Metadata = {
-  title: 'Sobre Nosotros | EcoAI Lab',
+  title: 'Sobre Nosotros | CUSTOM AI LAB SOLUTIONS',
   description: 'Equipo especializado en IA práctica. 25+ soluciones implementadas. ROI comprobado.',
 }
 
