@@ -1,4 +1,7 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
+import Hero from '@/components/Hero'
+import BenefitsList from '@/components/BenefitsList'
 import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
@@ -12,70 +15,194 @@ export default function IAProcesoPage() {
     {
       question: '¿Cuál es el costo de implementación?',
       answer:
-        'Depende de la complejidad. Proyectos típicos oscilan entre €5K-€20K. Primero hacemos auditoría gratuita donde estimamos el costo y ROI exacto.',
+        'Depende de la complejidad. Proyectos típicos oscilan entre €5K-€20K. Primero hacemos auditoría gratuita donde estimamos el costo y ROI exacto para tu caso.',
     },
     {
       question: '¿Cuánto tiempo tarda la implementación?',
-      answer: 'Usualmente 4-8 semanas desde auditoría hasta producción. Arrancamos con MVP funcional en las primeras 2 semanas.',
+      answer:
+        'Usualmente 4-8 semanas desde auditoría hasta producción. Arrancamos con MVP funcional en las primeras 2 semanas.',
     },
-    // ... más FAQs
+    {
+      question: '¿Necesito cambiar mi infraestructura actual?',
+      answer:
+        'No necesariamente. Nos integramos con tus sistemas (ERP, CRM, bases de datos). Si usan APIs, es ideal. Si no, hacemos la integración nosotros.',
+    },
+    {
+      question: '¿Qué soporte dan después del lanzamiento?',
+      answer:
+        'Incluimos 3 meses de soporte técnico. Monitoreamos la solución, hacemos ajustes, optimizamos. Luego puedes contratar soporte continuo o mantener con tu equipo.',
+    },
+    {
+      question: '¿Qué pasa si la IA comete errores?',
+      answer:
+        'Configuramos reglas de validación. Temas críticos siempre pasan por revisión humana. El objetivo es reducir errores, no eliminarlos.',
+    },
+    {
+      question: '¿Necesito un equipo técnico interno?',
+      answer:
+        'No para la implementación. Pero sí alguien que entienda el proceso que querés automatizar. Hacemos training a tu equipo como parte del proyecto.',
+    },
+  ]
+
+  const benefits = [
+    {
+      icon: '⏱️',
+      title: '40-60% Ahorro de Tiempo',
+      description: 'Tareas que tomaban horas ahora se resuelven en minutos',
+    },
+    {
+      icon: '✅',
+      title: 'Cero Errores Humanos',
+      description: 'Validación automática, procesamiento consistente',
+    },
+    {
+      icon: '⚡',
+      title: '10x Más Rápido',
+      description: 'Decisiones en tiempo real. Escalabilidad infinita.',
+    },
+    {
+      icon: '🔗',
+      title: 'Integración Transparente',
+      description: 'Conecta con tus sistemas sin disrupciones',
+    },
+  ]
+
+  const useCases = [
+    {
+      icon: '🏦',
+      title: 'Fintech & Banca',
+      description: 'Aprobación automática de créditos. Análisis de documentos + scoring.',
+    },
+    {
+      icon: '📦',
+      title: 'E-commerce & Retail',
+      description: 'Clasificación automática de órdenes. Routing a almacenes.',
+    },
+    {
+      icon: '🛡️',
+      title: 'Seguros',
+      description: 'Validación de reclamaciones. Decisión de pago automático.',
+    },
+    {
+      icon: '🏭',
+      title: 'Manufactura',
+      description: 'Inspección visual automática. Detección de defectos.',
+    },
+    {
+      icon: '👥',
+      title: 'RRHH',
+      description: 'Clasificación de CVs. Preselección automática.',
+    },
+    {
+      icon: '📊',
+      title: 'Datos & Análisis',
+      description: 'Extracción automática. Validación de información.',
+    },
   ]
 
   return (
     <div>
-      <section className="section">
-        <div className="container">
-          <h1>Automatiza procesos empresariales con IA</h1>
-          <p>
-            Automatización inteligente que trabaja 24/7. Tu equipo se enfoca en lo estratégico.
-          </p>
-          <button className="btn btn-primary">
-            Solicita tu Auditoría IA Gratuita (15 min)
-          </button>
-        </div>
-      </section>
+      <Hero
+        title="Automatiza procesos empresariales con IA"
+        subtitle="Trabajo inteligente 24/7. Sin errores. Sin cansancio."
+        description="Reducción de tareas manuales en 40-60%. Implementación en 90 días. ROI medible."
+        cta={{
+          text: 'Solicita tu Auditoría IA Gratuita (15 min)',
+          href: '/contacto',
+        }}
+      />
 
+      {/* Problema */}
       <section className="section section-light">
         <div className="container">
           <h2>El problema: Tareas manuales que consumen recursos</h2>
-          <p>Tareas repetitivas consumen 40-50% del tiempo de tu equipo...</p>
+          <p>
+            Tareas repetitivas consumen 40-50% del tiempo de tu equipo. Personal dedicado solo a
+            entrada de datos, validaciones, clasificación. Errores que requieren corrección manual.
+            Escalabilidad bloqueada: más volumen = más empleados.
+          </p>
+          <p>
+            <strong>Resultado: Equipo saturado, ineficiencia, oportunidades perdidas.</strong>
+          </p>
         </div>
       </section>
 
+      {/* Solución */}
       <section className="section">
         <div className="container">
           <h2>Nuestra solución: Automación inteligente 24/7</h2>
-          <p>Implementamos automaciones que trabajan 24/7, sin errores, sin cansancio.</p>
+          <p>
+            Implementamos automaciones que trabajan 24/7, sin errores, sin cansancio. Tu equipo
+            se enfoca en lo estratégico. IA maneja lo repetitivo.
+          </p>
+
+          <BenefitsList benefits={benefits} columns={4} />
         </div>
       </section>
 
+      {/* Proceso */}
       <section className="section section-light">
         <div className="container">
-          <h2>Beneficios principales</h2>
-          <ul>
-            <li>40-60% ahorro de tiempo</li>
-            <li>Reducción de errores humanos</li>
-            <li>Procesamiento 10x más rápido</li>
-            <li>Escalabilidad sin coste adicional</li>
-          </ul>
+          <h2>Cómo funciona: Integración sin complejidad</h2>
+
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(3, 1fr)',
+              gap: '2rem',
+              marginTop: '2rem',
+            }}
+          >
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>1</div>
+              <h3>Diagnóstico</h3>
+              <p>Analizamos tu proceso. Identificamos automatización + ROI potencial.</p>
+            </div>
+
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>2</div>
+              <h3>Desarrollo</h3>
+              <p>Construimos la solución. Testing. Integración con tus sistemas.</p>
+            </div>
+
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>3</div>
+              <h3>Lanzamiento</h3>
+              <p>Deploy en producción. Training. Soporte continuo incluido.</p>
+            </div>
+          </div>
         </div>
       </section>
 
+      {/* Casos de Uso */}
       <section className="section">
         <div className="container">
-          <h2>Preguntas frecuentes</h2>
+          <h2 style={{ textAlign: 'center', marginBottom: '3rem' }}>Casos de Uso</h2>
+          <BenefitsList benefits={useCases} columns={3} />
+        </div>
+      </section>
+
+      {/* FAQs */}
+      <section className="section section-light">
+        <div className="container">
+          <h2>Preguntas Frecuentes</h2>
           {faqs.map((faq, index) => (
             <FAQ key={index} question={faq.question} answer={faq.answer} />
           ))}
         </div>
       </section>
 
-      <section className="section section-light">
-        <div className="container">
-          <h2>¿Listo para empezar?</h2>
-          <button className="btn btn-primary">
-            Solicita tu Auditoría IA Gratuita (15 min)
-          </button>
+      {/* CTA Final */}
+      <section className="section">
+        <div className="container" style={{ textAlign: 'center' }}>
+          <h2>¿Listo para optimizar tus procesos?</h2>
+          <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>
+            Auditoría gratuita (15 min). Sin compromiso. Te contaremos exactamente cuánto
+            podrías ahorrar.
+          </p>
+          <Link href="/contacto" className="btn btn-primary">
+            Solicita tu Auditoría IA Gratuita
+          </Link>
         </div>
       </section>
     </div>

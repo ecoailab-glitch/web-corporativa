@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import Hero from '@/components/Hero'
+import ServiceCard from '@/components/ServiceCard'
 
 export const metadata: Metadata = {
   title: 'Servicios IA | EcoAI Lab',
@@ -6,36 +8,57 @@ export const metadata: Metadata = {
 }
 
 export default function ServiciosPage() {
+  const services = [
+    {
+      title: 'Automatización con IA',
+      description: 'Procesos que trabajan 24/7. Automatiza tareas repetitivas, reduce errores, escala sin empleados.',
+      benefits: ['40-60% ahorro de tiempo', 'Integración con sistemas existentes', 'ROI en 90 días'],
+      href: '/servicios/ia-procesos',
+      icon: '⚙️',
+    },
+    {
+      title: 'Chatbots y Agentes IA',
+      description: 'Soporte inteligente 24/7. Resuelve 60-80% de consultas automáticamente. Disponible en cualquier idioma.',
+      benefits: ['Disponibilidad 24/7', 'Resolución automática de consultas', 'Integración con tu CRM'],
+      href: '/servicios/chatbots-agentes',
+      icon: '💬',
+    },
+    {
+      title: 'Desarrollo Web/App IA',
+      description: 'Aplicaciones inteligentes. MVP en 4-6 semanas. Features de IA sin equipo ML interno.',
+      benefits: ['3-4x más rápido', 'Stack moderno y escalable', 'Expertise ML incluida'],
+      href: '/servicios/desarrollo-web-app-ia',
+      icon: '🚀',
+    },
+  ]
+
   return (
     <div>
-      <section className="section">
-        <div className="container">
-          <h1>Servicios de IA para empresas</h1>
-          <p>Tres servicios especializados para transformar tu negocio</p>
-        </div>
-      </section>
-
-      <section className="section section-light">
-        <div className="container">
-          <h2>1. Automatización Inteligente de Procesos</h2>
-          <p>Automatiza procesos manuales con inteligencia artificial.</p>
-          <a href="/servicios/ia-procesos">Ver más →</a>
-        </div>
-      </section>
+      <Hero
+        title="Servicios de IA para empresas"
+        subtitle="Tres soluciones especializadas para transformar tu negocio"
+        cta={{
+          text: 'Solicita tu Auditoría Gratuita',
+          href: '/contacto',
+        }}
+      />
 
       <section className="section">
         <div className="container">
-          <h2>2. Agentes IA Conversacionales 24/7</h2>
-          <p>Agentes conversacionales inteligentes que atienden tu negocio 24/7.</p>
-          <a href="/servicios/chatbots-agentes">Ver más →</a>
-        </div>
-      </section>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem' }}>
+            {services.map((service, index) => (
+              <ServiceCard key={index} {...service} />
+            ))}
+          </div>
 
-      <section className="section section-light">
-        <div className="container">
-          <h2>3. Desarrollo Web y App con IA</h2>
-          <p>Aplicaciones inteligentes. Desde cero o integradas en tu producto.</p>
-          <a href="/servicios/desarrollo-web-app-ia">Ver más →</a>
+          <div style={{ marginTop: '4rem', paddingTop: '2rem', borderTop: '1px solid var(--color-border)' }}>
+            <h3 style={{ textAlign: 'center' }}>¿Cuál es tu caso?</h3>
+            <p style={{ textAlign: 'center', fontSize: '1.1rem', marginTop: '1rem' }}>
+              Haz clic en el servicio que mejor se ajusta a tu necesidad. O si no estás seguro,
+              <strong> solicita una auditoría gratuita </strong>
+              y te ayudaremos a identificar las mejores oportunidades.
+            </p>
+          </div>
         </div>
       </section>
     </div>

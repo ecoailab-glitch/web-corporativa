@@ -1,0 +1,95 @@
+.hero {
+  position: relative;
+  padding: 6rem var(--spacing-md) 5rem;
+  color: var(--color-light);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 26, 26, 0.7);
+  z-index: 1;
+}
+
+.hero.centered {
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.content {
+  max-width: 800px;
+}
+
+.hero.centered .content {
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-light);
+}
+
+.subtitle {
+  font-size: 1.5rem !important;
+  font-weight: 400;
+  margin-bottom: var(--spacing-lg) !important;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.description {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: var(--spacing-xl);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.cta {
+  margin-top: var(--spacing-2xl);
+}
+
+.cta a,
+.cta button {
+  background-color: var(--color-primary) !important;
+  color: var(--color-light) !important;
+  padding: var(--spacing-md) var(--spacing-2xl) !important;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.cta a:hover,
+.cta button:hover {
+  background-color: #0052cc !important;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem var(--spacing-md) 3rem;
+    min-height: 50vh;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.25rem !important;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}

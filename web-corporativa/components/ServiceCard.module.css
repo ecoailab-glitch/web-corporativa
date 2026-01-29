@@ -1,0 +1,69 @@
+.card {
+  padding: var(--spacing-2xl);
+  background-color: var(--color-light);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+a .card {
+  cursor: pointer;
+}
+
+a:hover .card {
+  border-color: var(--color-primary);
+  box-shadow: 0 8px 24px rgba(0, 102, 255, 0.15);
+  transform: translateY(-4px);
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.card p {
+  color: #666;
+  margin-bottom: var(--spacing-lg);
+  flex-grow: 1;
+}
+
+.benefits {
+  list-style: none;
+  margin: 0 0 var(--spacing-lg) 0;
+  padding: 0;
+}
+
+.benefits li {
+  margin-bottom: var(--spacing-sm);
+  color: #666;
+}
+
+.benefits li:before {
+  content: '✓ ';
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.link {
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: var(--spacing-lg);
+  }
+
+  .card h3 {
+    font-size: 1.25rem;
+  }
+}
