@@ -1,18 +1,20 @@
 .hero {
   position: relative;
-  padding: 6rem var(--spacing-md) 5rem;
+  padding: 8rem var(--spacing-md) 7rem;
   color: var(--color-light);
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
-  min-height: 60vh;
+  min-height: 70vh;
+  overflow: hidden;
+  background-color: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 100%);
 }
 
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(26, 26, 26, 0.7);
+  background: linear-gradient(135deg, rgba(15, 15, 15, 0.8) 0%, rgba(26, 26, 46, 0.8) 100%);
   z-index: 1;
 }
 
@@ -31,6 +33,7 @@
 
 .content {
   max-width: 800px;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .hero.centered .content {
@@ -38,41 +41,49 @@
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: var(--spacing-lg);
   color: var(--color-light);
+  font-weight: 800;
+  letter-spacing: -1px;
 }
 
 .subtitle {
   font-size: 1.5rem !important;
   font-weight: 400;
   margin-bottom: var(--spacing-lg) !important;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: -0.3px;
 }
 
 .description {
   font-size: 1.125rem;
-  line-height: 1.6;
-  margin-bottom: var(--spacing-xl);
-  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-2xl);
+  color: rgba(255, 255, 255, 0.80);
 }
 
 .cta {
-  margin-top: var(--spacing-2xl);
+  margin-top: var(--spacing-3xl);
 }
 
 .cta a,
 .cta button {
   background-color: var(--color-primary) !important;
   color: var(--color-light) !important;
-  padding: var(--spacing-md) var(--spacing-2xl) !important;
-  font-size: 1rem;
-  font-weight: 600;
+  padding: 14px 40px !important;
+  font-size: 1.05rem;
+  font-weight: 500;
+  border-radius: 12px !important;
+  transition: var(--transition);
+  box-shadow: var(--shadow-lg);
 }
 
 .cta a:hover,
 .cta button:hover {
-  background-color: #0052cc !important;
+  background-color: #0892e5 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(10, 159, 255, 0.4);
 }
 
 @media (max-width: 768px) {

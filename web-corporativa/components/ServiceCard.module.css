@@ -1,12 +1,13 @@
 .card {
   padding: var(--spacing-2xl);
   background-color: var(--color-light);
-  border: 1px solid var(--color-border);
-  border-radius: 0.5rem;
-  transition: all 0.3s ease;
+  border: 1px solid var(--color-border-light);
+  border-radius: 16px;
+  transition: var(--transition);
   height: 100%;
   display: flex;
   flex-direction: column;
+  box-shadow: var(--shadow-sm);
 }
 
 a .card {
@@ -15,24 +16,34 @@ a .card {
 
 a:hover .card {
   border-color: var(--color-primary);
-  box-shadow: 0 8px 24px rgba(0, 102, 255, 0.15);
-  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-8px);
+  background: linear-gradient(135deg, #ffffff 0%, #f9f9fb 100%);
 }
 
 .icon {
   font-size: 2.5rem;
   margin-bottom: var(--spacing-lg);
+  transition: var(--transition);
+}
+
+a:hover .icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 8px rgba(10, 159, 255, 0.3));
 }
 
 .card h3 {
   font-size: 1.5rem;
   margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+  font-weight: 700;
 }
 
 .card p {
-  color: #666;
+  color: var(--color-text-secondary);
   margin-bottom: var(--spacing-lg);
   flex-grow: 1;
+  line-height: 1.7;
 }
 
 .benefits {
@@ -43,7 +54,8 @@ a:hover .card {
 
 .benefits li {
   margin-bottom: var(--spacing-sm);
-  color: #666;
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
 }
 
 .benefits li:before {
