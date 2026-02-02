@@ -11,6 +11,7 @@ export default function ContactoPageClient() {
     email: '',
     phone: '',
     company: '',
+    auditType: 'ia-procesos', // Default auditoría
     message: '',
   })
 
@@ -18,7 +19,7 @@ export default function ContactoPageClient() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
     setFormData((prev) => ({
       ...prev,
@@ -33,8 +34,8 @@ export default function ContactoPageClient() {
 
     try {
       // Validación básica
-      if (!formData.name || !formData.email || !formData.message) {
-        setError('Por favor completa nombre, email y mensaje.')
+      if (!formData.name || !formData.email || !formData.company || !formData.message) {
+        setError('Por favor completa todos los campos obligatorios.')
         setLoading(false)
         return
       }
@@ -47,20 +48,30 @@ export default function ContactoPageClient() {
         return
       }
 
-      // Aquí irá la integración con backend
-      // Por ahora simularemos un envío exitoso
-      console.log('Formulario enviado:', formData)
+      // Enviar a API
+      const response = await fetch('/api/leads', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) {
+        const errorData = await response.json()
+        throw new Error(errorData.error || 'Error al enviar el formulario')
+      }
 
       setSubmitted(true)
-      setFormData({ name: '', email: '', phone: '', company: '', message: '' })
+      setFormData({ name: '', email: '', phone: '', company: '', auditType: 'ia-procesos', message: '' })
 
-      // Reset form después de 3 segundos
+      // Reset form después de 4 segundos
       setTimeout(() => {
         setSubmitted(false)
-      }, 3000)
+      }, 4000)
     } catch (err) {
-      setError('Error al enviar. Intenta de nuevo.')
-      console.error(err)
+      setError(err instanceof Error ? err.message : 'Error al enviar. Intenta de nuevo.')
+      console.error('Error submitting form:', err)
     } finally {
       setLoading(false)
     }
@@ -83,7 +94,7 @@ export default function ContactoPageClient() {
 
               {submitted && (
                 <div className={styles.successMessage}>
-                  ✓ Mensaje enviado exitosamente. Te contactaremos en 24 horas.
+                  ✓ Auditoría solicitada exitosamente. Te contactaremos en 24 horas.
                 </div>
               )}
 
@@ -118,6 +129,19 @@ export default function ContactoPageClient() {
                   </div>
 
                   <div className={styles.formGroup}>
+                    <label htmlFor="company">Empresa *</label>
+                    <input
+                      type="text"
+                      id="company"
+                      name="company"
+                      value={formData.company}
+                      onChange={handleChange}
+                      placeholder="Tu empresa"
+                      required
+                    />
+                  </div>
+
+                  <div className={styles.formGroup}>
                     <label htmlFor="phone">Teléfono</label>
                     <input
                       type="tel"
@@ -130,15 +154,19 @@ export default function ContactoPageClient() {
                   </div>
 
                   <div className={styles.formGroup}>
-                    <label htmlFor="company">Empresa</label>
-                    <input
-                      type="text"
-                      id="company"
-                      name="company"
-                      value={formData.company}
+                    <label htmlFor="auditType">Tipo de Auditoría *</label>
+                    <select
+                      id="auditType"
+                      name="auditType"
+                      value={formData.auditType}
                       onChange={handleChange}
-                      placeholder="Tu empresa"
-                    />
+                      required
+                    >
+                      <option value="ia-procesos">IA en Procesos</option>
+                      <option value="chatbots-agentes">Chatbots y Agentes</option>
+                      <option value="desarrollo-web-app-ia">Desarrollo Web/App + IA</option>
+                      <option value="otro">Otro (explica en mensaje)</option>
+                    </select>
                   </div>
 
                   <div className={styles.formGroup}>
@@ -155,7 +183,7 @@ export default function ContactoPageClient() {
                   </div>
 
                   <button type="submit" className="button button-primary" disabled={loading}>
-                    {loading ? 'Enviando...' : 'Enviar'}
+                    {loading ? 'Enviando...' : 'Solicitar Auditoría Gratuita'}
                   </button>
 
                   <p style={{ fontSize: '0.9rem', color: '#999', marginTop: '1rem' }}>
