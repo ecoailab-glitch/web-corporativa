@@ -13,7 +13,6 @@
     "format:check": "prettier --check \"**/*.{ts,tsx,json,md}\""
   },
   "dependencies": {
-    "firebase-admin": "^13.6.0",
     "marked": "^17.0.1",
     "next": "^15.0.0",
     "react": "^19.0.0",
@@ -25,7 +24,7 @@
     "@types/react-dom": "^19.0.0",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^7.0.0",
-    "eslint": "^9.0.0",
+    "eslint": "^8.0.0",
     "eslint-config-next": "^15.0.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-react": "^7.34.0",
