@@ -1,6 +1,10 @@
+'use client'
+
 import { Metadata } from 'next'
 import Link from 'next/link'
+import { useEffect } from 'react'
 import { getPostBySlug, getAllPostSlugs, getAllPosts, markdownToHtml } from '@/lib/mdx'
+import { trackBlogView } from '@/lib/gtag'
 import styles from '@/styles/BlogPost.module.css'
 
 interface Params {
@@ -39,6 +43,13 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 export default function BlogPostPage({ params }: { params: Params }) {
   const post = getPostBySlug(params.slug)
   const allPosts = getAllPosts()
+
+  // Track blog view
+  useEffect(() => {
+    if (post) {
+      trackBlogView(post.slug, post.title, post.category)
+    }
+  }, [post])
 
   if (!post) {
     return (

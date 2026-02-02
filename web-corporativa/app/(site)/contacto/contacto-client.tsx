@@ -2,7 +2,9 @@
 
 import type { ChangeEvent, FormEvent } from 'react'
 import { useState } from 'react'
+import Link from 'next/link'
 import Hero from '@/components/Hero'
+import { trackLeadSubmit, trackFormError, trackCalendarClick } from '@/lib/gtag'
 import styles from './contacto.module.css'
 
 export default function ContactoPageClient() {
@@ -35,7 +37,9 @@ export default function ContactoPageClient() {
     try {
       // Validación básica
       if (!formData.name || !formData.email || !formData.company || !formData.message) {
-        setError('Por favor completa todos los campos obligatorios.')
+        const errorMsg = 'Por favor completa todos los campos obligatorios.'
+        setError(errorMsg)
+        trackFormError('contacto', errorMsg)
         setLoading(false)
         return
       }
@@ -43,7 +47,9 @@ export default function ContactoPageClient() {
       // Email básico regex
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
       if (!emailRegex.test(formData.email)) {
-        setError('Email inválido.')
+        const errorMsg = 'Email inválido.'
+        setError(errorMsg)
+        trackFormError('contacto', errorMsg)
         setLoading(false)
         return
       }
@@ -62,6 +68,13 @@ export default function ContactoPageClient() {
         throw new Error(errorData.error || 'Error al enviar el formulario')
       }
 
+      // Track successful lead submission
+      trackLeadSubmit({
+        email: formData.email,
+        company: formData.company,
+        auditType: formData.auditType,
+      })
+
       setSubmitted(true)
       setFormData({ name: '', email: '', phone: '', company: '', auditType: 'ia-procesos', message: '' })
 
@@ -70,7 +83,9 @@ export default function ContactoPageClient() {
         setSubmitted(false)
       }, 4000)
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Error al enviar. Intenta de nuevo.')
+      const errorMessage = err instanceof Error ? err.message : 'Error al enviar. Intenta de nuevo.'
+      setError(errorMessage)
+      trackFormError('contacto', errorMessage)
       console.error('Error submitting form:', err)
     } finally {
       setLoading(false)
@@ -242,6 +257,7 @@ export default function ContactoPageClient() {
                   rel="noopener noreferrer"
                   className="button button-secondary"
                   style={{ marginTop: '1rem' }}
+                  onClick={() => trackCalendarClick('contact-form')}
                 >
                   Agendar Llamada
                 </a>

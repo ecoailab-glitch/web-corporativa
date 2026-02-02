@@ -4,6 +4,7 @@ import Hero from '@/components/Hero'
 import BenefitsList from '@/components/BenefitsList'
 import FAQ from '@/components/FAQ'
 import Schema from '@/components/Schema'
+import ServicePageWrapper from '@/components/ServicePageWrapper'
 import { serviceSchema, faqPageSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
@@ -103,16 +104,20 @@ export default function IAProcesoPage() {
   ]
 
   return (
-    <div>
-      <Hero
-        title="Automatiza procesos empresariales con IA"
-        subtitle="Trabajo inteligente 24/7. Sin errores. Sin cansancio."
-        description="Reducción de tareas manuales en 40-60%. Implementación en 90 días. ROI medible."
-        cta={{
-          text: 'Solicita tu Auditoría IA Gratuita (15 min)',
-          href: '/contacto',
-        }}
-      />
+    <ServicePageWrapper
+      serviceId="ia-procesos"
+      serviceName="Automatización de Procesos con IA"
+    >
+      <div>
+        <Hero
+          title="Automatiza procesos empresariales con IA"
+          subtitle="Trabajo inteligente 24/7. Sin errores. Sin cansancio."
+          description="Reducción de tareas manuales en 40-60%. Implementación en 90 días. ROI medible."
+          cta={{
+            text: 'Solicita tu Auditoría IA Gratuita (15 min)',
+            href: '/contacto',
+          }}
+        />
 
       {/* Problema */}
       <section className="section section-light">
@@ -252,7 +257,8 @@ export default function IAProcesoPage() {
           },
         ])}
       />
-    </div>
+      </div>
+    </ServicePageWrapper>
   )
 }
 }
