@@ -10,7 +10,7 @@ interface TestimonialProps {
 export default function Testimonial({ quote, author, role, company }: TestimonialProps) {
   return (
     <div className={styles.testimonial}>
-      <p className={styles.quote}>"{quote}"</p>
+      <p className={styles.quote}>&quot;{quote}&quot;</p>
       <div className={styles.author}>
         <strong>{author}</strong>
         <span>

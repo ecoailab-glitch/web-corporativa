@@ -17,8 +17,6 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   const posts = getAllPosts()
 
-  const categories = Array.from(new Set(posts.map((post) => post.category)))
-
   return (
     <main className={styles.container}>
       {/* Hero */}

@@ -50,7 +50,7 @@ export default function CaseStudy({
 
             {quote && (
               <div className={styles.quote}>
-                <p>"{quote}"</p>
+                <p>&quot;{quote}&quot;</p>
               </div>
             )}
           </div>

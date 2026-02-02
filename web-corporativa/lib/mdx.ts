@@ -21,7 +21,7 @@ export interface Post extends PostMetadata {
 
 // Convert markdown to HTML
 export function markdownToHtml(markdown: string): string {
-  return marked(markdown)
+  return marked.parse(markdown) as string
 }
 
 export function getAllPosts(): Post[] {

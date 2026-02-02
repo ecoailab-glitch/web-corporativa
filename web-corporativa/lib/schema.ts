@@ -1,6 +1,5 @@
-import type { Organization, Service, FAQPage } from 'schema.org'
-
-export function organizationSchema(): Organization {
+// Convert markdown to HTML
+export function organizationSchema(): any {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
@@ -34,7 +33,7 @@ export function serviceSchema(
   description: string,
   url: string,
   image?: string
-): Service {
+): any {
   return {
     '@context': 'https://schema.org',
     '@type': 'Service',
@@ -60,7 +59,7 @@ export function faqPageSchema(
     question: string
     answer: string
   }>
-): FAQPage {
+): any {
   return {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',

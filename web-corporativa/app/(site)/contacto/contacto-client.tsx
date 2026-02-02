@@ -2,7 +2,6 @@
 
 import type { ChangeEvent, FormEvent } from 'react'
 import { useState } from 'react'
-import Link from 'next/link'
 import Hero from '@/components/Hero'
 import { trackLeadSubmit, trackFormError, trackCalendarClick } from '@/lib/gtag'
 import styles from './contacto.module.css'
