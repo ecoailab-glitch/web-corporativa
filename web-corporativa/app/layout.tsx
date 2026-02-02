@@ -38,19 +38,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Google Analytics 4 */}
         {GA_ID && (
           <>
-            <Script strategy="afterInteractive" src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
+            <Script 
+              strategy="beforeInteractive" 
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+              async
+            />
             <Script
               id="gtag-init"
-              strategy="afterInteractive"
+              strategy="beforeInteractive"
               dangerouslySetInnerHTML={{
                 __html: `
                   window.dataLayer = window.dataLayer || [];
                   function gtag(){dataLayer.push(arguments);}
                   gtag('js', new Date());
-                  gtag('config', '${GA_ID}', {
-                    page_path: window.location.pathname,
-                    anonymize_ip: true,
-                  });
+                  gtag('config', '${GA_ID}');
                 `,
               }}
             />
