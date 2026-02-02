@@ -32,6 +32,9 @@ export default function Footer() {
                 <Link href="/casos">Casos de Éxito</Link>
               </li>
               <li>
+                <Link href="/blog">Blog</Link>
+              </li>
+              <li>
                 <Link href="/sobre-nosotros">Sobre Nosotros</Link>
               </li>
               <li>

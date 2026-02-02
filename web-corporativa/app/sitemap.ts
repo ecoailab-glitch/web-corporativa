@@ -1,14 +1,23 @@
 import type { MetadataRoute } from 'next'
+import { getAllPostSlugs } from '@/lib/mdx'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://customailab.com'
+  const postSlugs = getAllPostSlugs()
+
+  const blogRoutes = postSlugs.map((slug) => ({
+    url: `${baseUrl}/blog/${slug}`,
+    lastModified: new Date('2026-02-02'),
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }))
 
   return [
     // Home
     {
       url: `${baseUrl}/`,
       lastModified: new Date('2026-01-29'),
-      changeFrequency: 'weekly',
+      changeFrequency: 'weekly' as const,
       priority: 1.0,
     },
 
@@ -16,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/servicios`,
       lastModified: new Date('2026-01-29'),
-      changeFrequency: 'weekly',
+      changeFrequency: 'weekly' as const,
       priority: 0.9,
     },
 
@@ -24,7 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/servicios/ia-procesos`,
       lastModified: new Date('2026-01-29'),
-      changeFrequency: 'monthly',
+      changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
 
@@ -32,7 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/servicios/chatbots-agentes`,
       lastModified: new Date('2026-01-29'),
-      changeFrequency: 'monthly',
+      changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
 
@@ -40,15 +49,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/servicios/desarrollo-web-app-ia`,
       lastModified: new Date('2026-01-29'),
-      changeFrequency: 'monthly',
+      changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
+
+    // Blog Hub
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: new Date('2026-02-02'),
+      changeFrequency: 'weekly' as const,
+      priority: 0.85,
+    },
+
+    // Blog Posts
+    ...blogRoutes,
 
     // Sobre Nosotros
     {
       url: `${baseUrl}/sobre-nosotros`,
       lastModified: new Date('2026-01-29'),
-      changeFrequency: 'monthly',
+      changeFrequency: 'monthly' as const,
       priority: 0.7,
     },
 
@@ -56,7 +76,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/casos`,
       lastModified: new Date('2026-01-29'),
-      changeFrequency: 'monthly',
+      changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
 
@@ -64,7 +84,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/contacto`,
       lastModified: new Date('2026-01-29'),
-      changeFrequency: 'weekly',
+      changeFrequency: 'weekly' as const,
       priority: 0.7,
     },
   ]

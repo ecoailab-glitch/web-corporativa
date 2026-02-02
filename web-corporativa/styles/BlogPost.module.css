@@ -1,0 +1,2 @@
+/* BlogPost.module.css - Re-export from Blog.module.css since they share styles */
+@import './Blog.module.css';
