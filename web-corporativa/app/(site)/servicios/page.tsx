@@ -43,7 +43,7 @@ export default function ServiciosPage() {
         }}
       />
 
-      <section className="section">
+      <section className="section section-light">
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem' }}>
             {services.map((service, index) => (
