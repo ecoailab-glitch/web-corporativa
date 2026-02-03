@@ -22,6 +22,9 @@ export default function BlogPage() {
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
+          <Link href="/" className={styles.backButton}>
+            ← Volver a Home
+          </Link>
           <h1>Blog: IA, Automatización y ROI</h1>
           <p>Casos reales de empresas que transformaron su operación con inteligencia artificial. Estrategia, tecnología y resultados medibles.</p>
         </div>
