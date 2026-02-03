@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { ReactNode } from 'react'
 import styles from './Hero.module.css'
 
 interface HeroProps {
@@ -14,6 +15,7 @@ interface HeroProps {
   }
   backgroundImage?: string
   centered?: boolean
+  visual?: ReactNode
 }
 
 export default function Hero({
@@ -23,11 +25,14 @@ export default function Hero({
   cta,
   backgroundImage,
   centered = true,
+  visual,
 }: HeroProps) {
+  const hasVisual = visual && !centered
+
   return (
     <section
-      className={`${styles.hero} ${centered ? styles.centered : ''}`}
-      style={backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : {}}
+      className={`${styles.hero} ${centered ? styles.centered : ''} ${hasVisual ? styles.withVisual : ''}`}
+      style={backgroundImage && centered ? { backgroundImage: `url(${backgroundImage})` } : {}}
     >
       <div className={styles.overlay}></div>
       <div className={styles.container}>
@@ -50,6 +55,12 @@ export default function Hero({
             </div>
           )}
         </div>
+
+        {visual && (
+          <div className={styles.visual}>
+            {visual}
+          </div>
+        )}
       </div>
     </section>
   )

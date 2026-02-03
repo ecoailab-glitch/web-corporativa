@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Poppins, Space_Grotesk } from 'next/font/google'
 import Script from 'next/script'
+import MouseWaves from '@/components/MouseWaves'
+import Chatbot from '@/components/Chatbot'
 import './globals.css'
 import './animations.css'
 
@@ -8,6 +10,18 @@ const inter = Inter({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-inter',
+})
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-poppins',
+})
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-space-grotesk',
 })
 
 export const metadata: Metadata = {
@@ -34,7 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const GA_ID = process.env.NEXT_PUBLIC_GA_ID
 
   return (
-    <html lang="es" className={inter.variable}>
+    <html lang="es" className={`${inter.variable} ${poppins.variable} ${spaceGrotesk.variable}`}>
       <head>
         {/* Google Analytics 4 */}
         {GA_ID && (
@@ -59,7 +73,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </>
         )}
       </head>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased" style={{ position: 'relative' }}>
+        <MouseWaves />
+        <Chatbot />
+        <div style={{ position: 'relative', zIndex: 1 }}>
+          {children}
+        </div>
+      </body>
     </html>
   )
 }

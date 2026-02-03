@@ -128,7 +128,7 @@ export default function ChatbotsAgentesPage() {
       </section>
 
       {/* Solución */}
-      <section className="section">
+      <section className="section section-light">
         <div className="container">
           <h2>Nuestra solución: Agentes conversacionales que resuelven</h2>
           <p>
@@ -176,7 +176,7 @@ export default function ChatbotsAgentesPage() {
       </section>
 
       {/* Casos de Uso */}
-      <section className="section">
+      <section className="section section-light">
         <div className="container">
           <h2 style={{ textAlign: 'center', marginBottom: '3rem' }}>Casos de Uso</h2>
           <BenefitsList benefits={useCases} columns={3} />
@@ -194,7 +194,7 @@ export default function ChatbotsAgentesPage() {
       </section>
 
       {/* CTA Final */}
-      <section className="section">
+      <section className="section section-light">
         <div className="container" style={{ textAlign: 'center' }}>
           <h2>¿Listo para mejorar tu soporte?</h2>
           <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>

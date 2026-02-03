@@ -1,8 +1,9 @@
 import Link from 'next/link'
 import Hero from '@/components/Hero'
+import TechHand from '@/components/TechHand'
 import ServiceCard from '@/components/ServiceCard'
+import ServiceCardHover from '@/components/ServiceCardHover'
 import BenefitsList from '@/components/BenefitsList'
-import CaseStudy from '@/components/CaseStudy'
 import Testimonial from '@/components/Testimonial'
 import Schema from '@/components/Schema'
 import { organizationSchema } from '@/lib/schema'
@@ -61,35 +62,49 @@ export default function Home() {
       <Hero
         title="Automatiza tu empresa con IA"
         subtitle="Reduce costos, genera ingresos. Implementado en 90 días."
-        description="EcoAI Lab lleva inteligencia artificial a tu negocio. Sin equipo técnico. Sin inversión en R&D. Soluciones probadas en fintech, retail, manufactura y servicios."
+        description="CUSTOM AI LAB SOLUTIONS lleva inteligencia artificial a tu negocio. Sin equipo técnico. Sin inversión en R&D. Soluciones probadas y escalables."
         cta={{
           text: 'Solicita tu Auditoría IA Gratuita (15 min)',
           href: '/contacto',
         }}
-        backgroundImage="linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+        centered={false}
+        visual={<TechHand />}
       />
 
       {/* Schema Organization */}
       <Schema schema={organizationSchema()} />
 
-      {/* El Problema */}
+      {/* Páginas Principales */}
       <section className="section section-light">
         <div className="container">
-          <h2>Tu empresa se queda atrás con procesos manuales</h2>
-          <p>
-            Tareas repetitivas consumen 40-50% del tiempo de tu equipo. Servicios al cliente
-            atienden solo en horario de oficina. Tomar decisiones sin datos en tiempo real.
-          </p>
-          <p>
-            <strong>La IA no es futuro, es presente. Tus competidores ya la usan.</strong>
-          </p>
+          <h2 style={{ textAlign: 'center', marginBottom: '3rem' }}>Explora Nuestras Soluciones</h2>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem' }}>
+            <ServiceCardHover
+              href="/servicios/ia-procesos"
+              title="IA en Procesos"
+              description="Automatiza tareas manuales 24/7. Sin errores, sin cansancio."
+            />
+
+            <ServiceCardHover
+              href="/servicios/chatbots-agentes"
+              title="Chatbots y Agentes IA"
+              description="Soporte al cliente inteligente disponible 24/7."
+            />
+
+            <ServiceCardHover
+              href="/servicios/desarrollo-web-app-ia"
+              title="Desarrollo Web/App IA"
+              description="Aplicaciones inteligentes. MVP en 4-6 semanas."
+            />
+          </div>
         </div>
       </section>
 
       {/* Nuestra Solución */}
-      <section className="section">
+      <section className="section section-light">
         <div className="container">
-          <h2>IA que funciona. Desde el día 1.</h2>
+          <h2>Nuestros Servicios</h2>
           <p>
             CUSTOM AI LAB SOLUTIONS implementa soluciones IA que se integran con tus sistemas existentes y
             generan ROI en 3-6 meses.
@@ -127,7 +142,7 @@ export default function Home() {
       </section>
 
       {/* Servicios */}
-      <section className="section">
+      <section className="section section-light">
         <div className="container">
           <h2 style={{ textAlign: 'center', marginBottom: '3rem' }}>Nuestros Servicios</h2>
 
@@ -139,78 +154,38 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Casos de Éxito */}
-      <section className="section section-light">
-        <div className="container">
-          <h2 style={{ textAlign: 'center', marginBottom: '3rem' }}>Casos de Éxito</h2>
-        </div>
-      </section>
-
-      <CaseStudy
-        index={0}
-        company="Startup Fintech"
-        role="CTO"
-        challenge="20 personas en soporte atendiendo solo en horario de oficina, saturadas"
-        solution="Implementamos agente IA que resuelve 70% de consultas sin intervención humana"
-        result="Pasaron de 20 personas en soporte a 5. ROI pagado en 3 meses."
-        resultNumber="70%"
-        quote="Implementaron un agente que resuelve 70% de nuestras consultas sin intervención humana. En 3 meses pagamos la inversión."
-      />
-
-      <CaseStudy
-        index={1}
-        company="E-commerce Retail"
-        role="Operations Manager"
-        challenge="500 órdenes diarias procesadas manualmente. Errores frecuentes, escalabilidad bloqueada"
-        solution="Automatización inteligente de procesamiento de órdenes con validación automática"
-        result="Pasaron de 500 a 5000 órdenes diarias sin expandir el equipo. Errores 95% reducidos."
-        resultNumber="95%"
-        quote="La automatización de órdenes nos permitió pasar de 500 a 5000 órdenes diarias sin expandir el equipo. Errores se redujeron 95%."
-      />
-
-      <CaseStudy
-        index={2}
-        company="Manufactura"
-        role="Plant Manager"
-        challenge="Inspección manual de calidad es lenta y pierde defectos. Cuellos de botella"
-        solution="Visión por computadora para detección automática de defectos en línea de producción"
-        result="Inspectores ahora revisan lo que IA marca como potencial defecto. Productividad +30%."
-        resultNumber="30%"
-        quote="Instalaron visión por computadora. Nuestros inspectores ahora revisan lo que la IA marca como potencial defecto. Productividad +30%."
-      />
-
       {/* Testimonios */}
-      <section className="section">
+      <section className="section section-light">
         <div className="container">
           <h2 style={{ textAlign: 'center', marginBottom: '3rem' }}>Lo que Dicen Nuestros Clientes</h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '2rem' }}>
             <Testimonial
-              quote="Implementaron un agente que resuelve 70% de nuestras consultas sin intervención humana. En 3 meses pagamos la inversión."
+              quote="Implementaron un agente que resuelve el 70% de nuestras consultas sin intervención humana."
               author="Carlos M."
               role="CTO"
-              company="Startup Fintech"
+              company="Tech Company"
             />
 
             <Testimonial
-              quote="La automatización de órdenes nos permitió pasar de 500 a 5000 órdenes diarias sin expandir el equipo."
+              quote="La automatización nos permitió escalar operaciones sin expandir el equipo."
               author="María L."
               role="Operations Manager"
-              company="Retail Online"
+              company="Tech Company"
             />
 
             <Testimonial
-              quote="Instalaron visión por computadora. Productividad subió 30% y detectamos defectos que antes se pasaban."
+              quote="Integraron IA en nuestro producto. El engagement subió significativamente."
               author="Juan P."
-              role="Plant Manager"
-              company="Manufactura"
+              role="Product Manager"
+              company="Tech Company"
             />
 
             <Testimonial
-              quote="Integraron IA en nuestro producto. Users aman la búsqueda semántica. Engagement subió 45%."
+              quote="La solución fue implementada rápidamente y generó ROI en los primeros 3 meses."
               author="Sophie D."
-              role="Product Manager"
-              company="SaaS"
+              role="CEO"
+              company="Tech Startup"
             />
           </div>
         </div>

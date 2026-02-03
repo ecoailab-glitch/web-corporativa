@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  padding: 8rem var(--spacing-md) 7rem;
+  padding: 8rem 1rem 7rem;
   color: var(--color-light);
   background-size: cover;
   background-position: center;
@@ -8,13 +8,14 @@
   align-items: center;
   min-height: 70vh;
   overflow: hidden;
-  background-color: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 100%);
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f4c81 100%);
+  background-attachment: fixed;
 }
 
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(15, 15, 15, 0.8) 0%, rgba(26, 26, 46, 0.8) 100%);
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.3) 0%, rgba(30, 41, 59, 0.3) 100%);
   z-index: 1;
 }
 
@@ -29,20 +30,35 @@
   width: 100%;
   position: relative;
   z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hero.withVisual .container {
+  justify-content: space-between;
 }
 
 .content {
-  max-width: 800px;
+  max-width: 600px;
   animation: fadeInUp 0.8s ease-out;
+  flex: 1;
 }
 
 .hero.centered .content {
   margin: 0 auto;
 }
 
+.visual {
+  flex: 1;
+  max-width: 450px;
+  width: 100%;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
 .hero h1 {
   font-size: 3.5rem;
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: 1.5rem;
   color: var(--color-light);
   font-weight: 800;
   letter-spacing: -1px;
@@ -51,7 +67,7 @@
 .subtitle {
   font-size: 1.5rem !important;
   font-weight: 400;
-  margin-bottom: var(--spacing-lg) !important;
+  margin-bottom: 1.5rem !important;
   color: rgba(255, 255, 255, 0.85);
   letter-spacing: -0.3px;
 }
@@ -59,12 +75,12 @@
 .description {
   font-size: 1.125rem;
   line-height: 1.7;
-  margin-bottom: var(--spacing-2xl);
+  margin-bottom: 3rem;
   color: rgba(255, 255, 255, 0.80);
 }
 
 .cta {
-  margin-top: var(--spacing-3xl);
+  margin-top: 4rem;
 }
 
 .cta a,
@@ -76,20 +92,29 @@
   font-weight: 500;
   border-radius: 12px !important;
   transition: var(--transition);
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 8px 24px rgba(10, 159, 255, 0.3);
 }
 
 .cta a:hover,
 .cta button:hover {
   background-color: #0892e5 !important;
   transform: translateY(-2px);
-  box-shadow: 0 16px 32px rgba(10, 159, 255, 0.4);
+  box-shadow: 0 16px 32px rgba(10, 159, 255, 0.5);
 }
 
 @media (max-width: 768px) {
   .hero {
-    padding: 4rem var(--spacing-md) 3rem;
+    padding: 4rem 1rem 3rem;
     min-height: 50vh;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .visual {
+    max-width: 300px;
   }
 
   .hero h1 {

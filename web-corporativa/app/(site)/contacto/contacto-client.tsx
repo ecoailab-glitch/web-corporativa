@@ -99,7 +99,7 @@ export default function ContactoPageClient() {
         description="Sin compromisos. Solo quiero entender si podemos ayudarte."
       />
 
-      <section className="section">
+      <section className="section section-light">
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem' }}>
             {/* Formulario */}

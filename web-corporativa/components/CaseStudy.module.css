@@ -8,13 +8,14 @@
 
 .content h3 {
   font-size: 1.75rem;
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: 0.5rem;
   font-weight: 800;
+  color: var(--color-light);
 }
 
 .role {
-  color: var(--color-primary);
-  margin-bottom: var(--spacing-lg) !important;
+  color: var(--color-accent);
+  margin-bottom: 1.5rem !important;
   font-size: 0.95rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -22,47 +23,50 @@
 }
 
 .section {
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: 1.5rem;
 }
 
 .section h4 {
   font-size: 1rem;
-  margin-bottom: var(--spacing-sm);
-  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+  color: var(--color-accent);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-weight: 600;
 }
 
 .quote {
-  background-color: var(--color-secondary);
-  padding: var(--spacing-lg);
-  border-left: 3px solid var(--color-primary);
-  margin-top: var(--spacing-lg);
+  background-color: rgba(30, 41, 59, 0.6);
+  padding: 1.5rem;
+  border-left: 3px solid var(--color-accent);
+  margin-top: 1.5rem;
   border-radius: 8px;
   transition: var(--transition);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .quote:hover {
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.1);
   transform: translateX(4px);
+  border-left-color: var(--color-primary);
 }
 
 .metric {
   text-align: center;
-  padding: var(--spacing-2xl);
-  background: linear-gradient(135deg, var(--color-secondary) 0%, #f9f9fb 100%);
+  padding: 2rem;
+  background: rgba(30, 41, 59, 0.6);
   border-radius: 16px;
   flex-shrink: 0;
   min-width: 240px;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: var(--transition);
-  border: 1px solid var(--color-border-light);
+  border: 1px solid rgba(100, 116, 139, 0.3);
 }
 
 .metric:hover {
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 8px 16px rgba(0, 212, 255, 0.15);
   transform: translateY(-4px);
+  border-color: rgba(0, 212, 255, 0.3);
 }
 
 .number {
@@ -71,12 +75,12 @@
   background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: 0.5rem;
 }
 
 .metric p {
   font-size: 1.1rem;
-  color: var(--color-text);
+  color: rgba(255, 255, 255, 0.75);
   margin: 0;
 }
 

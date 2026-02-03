@@ -129,7 +129,7 @@ export default function DesarrolloWebAppIAPage() {
       </section>
 
       {/* Solución */}
-      <section className="section">
+      <section className="section section-light">
         <div className="container">
           <h2>Nuestra solución: IA embedded en tu aplicación</h2>
           <p>
@@ -176,7 +176,7 @@ export default function DesarrolloWebAppIAPage() {
       </section>
 
       {/* Casos de Uso */}
-      <section className="section">
+      <section className="section section-light">
         <div className="container">
           <h2 style={{ textAlign: 'center', marginBottom: '3rem' }}>Casos de Uso</h2>
           <BenefitsList benefits={useCases} columns={3} />
@@ -194,7 +194,7 @@ export default function DesarrolloWebAppIAPage() {
       </section>
 
       {/* CTA Final */}
-      <section className="section">
+      <section className="section section-light">
         <div className="container" style={{ textAlign: 'center' }}>
           <h2>¿Listo para llevar tu producto al siguiente nivel?</h2>
           <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>
