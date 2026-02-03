@@ -36,7 +36,7 @@ export default function Chatbot() {
     const message = userMessage.toLowerCase()
 
     // Base de conocimiento del sitio
-    const knowledge = {
+    const knowledge: Record<string, Record<string, string>> = {
       servicios: {
         'ia en procesos|automatización|procesos manuales': 
           '⚙️ **IA en Procesos**: Automatización de tareas manuales 24/7. Ideal para:\n• Clasificación de datos\n• Validación de documentos\n• Entrada de datos automática\n• Decisiones en tiempo real\n\nResultados: 40-60% ahorro de tiempo, cero errores humanos.\n\n¿Tienes procesos manuales que automatizar?',
@@ -105,10 +105,12 @@ export default function Chatbot() {
     }
 
     // Buscar coincidencias en la base de conocimiento
-    for (const [keywords, response] of Object.entries(knowledge)) {
-      const keywordArray = keywords.split('|')
-      if (keywordArray.some(keyword => message.includes(keyword))) {
-        return response
+    for (const category of Object.values(knowledge)) {
+      for (const [keywords, response] of Object.entries(category)) {
+        const keywordArray = keywords.split('|')
+        if (keywordArray.some(keyword => message.includes(keyword))) {
+          return response
+        }
       }
     }
 
