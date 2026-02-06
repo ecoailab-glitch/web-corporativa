@@ -118,7 +118,7 @@ export default function Home() {
             <ServiceCardHover
               href="/servicios/desarrollo-web-app-ia"
               title="Desarrollo Web/App IA"
-              description="Aplicaciones inteligentes. MVP en 4-6 semanas."
+              description="Aplicaciones inteligentes. MVP rápido."
             />
           </div>
         </div>
@@ -129,39 +129,38 @@ export default function Home() {
       {/* Cómo Funciona */}
       <section className="section section-light">
         <div className="container">
-          <h2>3 pasos hacia la transformación</h2>
+          <h2 style={{ textAlign: 'center' }}>5 pasos hacia la transformación</h2>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem', marginTop: '2rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '2rem', marginTop: '2rem' }}>
             <div style={{ textAlign: 'center' }}>
               <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>1️⃣</div>
               <h3>Auditoría Inicial</h3>
-              <p>Análisis de procesos, identificación de oportunidades, estimación de ROI</p>
+              <p>Análisis de procesos e identificación de oportunidades</p>
             </div>
 
             <div style={{ textAlign: 'center' }}>
               <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>2️⃣</div>
               <h3>Implementación y Testing</h3>
-              <p>Desarrollo, integración con sistemas, testing y ajustes</p>
+              <p>Desarrollo e integración con tus sistemas</p>
             </div>
 
             <div style={{ textAlign: 'center' }}>
               <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>3️⃣</div>
               <h3>Optimización Continua</h3>
-              <p>Training al equipo, soporte técnico, optimización continua</p>
+              <p>Training al equipo y ajustes finos</p>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Servicios */}
-      <section className="section section-light">
-        <div className="container">
-          <h2 style={{ textAlign: 'center', marginBottom: '3rem' }}>Nuestros Servicios</h2>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>4️⃣</div>
+              <h3>Feedback de Clientes</h3>
+              <p>Mejora basada en experiencia real de usuarios</p>
+            </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem' }}>
-            {services.map((service, index) => (
-              <ServiceCard key={index} {...service} />
-            ))}
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>5️⃣</div>
+              <h3>Soporte Continuo</h3>
+              <p>Mantenimiento y evolución de la solución</p>
+            </div>
           </div>
         </div>
       </section>
