@@ -8,7 +8,7 @@ import { serviceSchema, faqPageSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Chatbots y Agentes IA | Soporte 24/7 | CUSTOM AI LAB SOLUTIONS',
-  description: 'Agentes conversacionales inteligentes. 60-80% de consultas resueltas automáticamente. Soporte 24/7.',
+  description: 'Agentes conversacionales inteligentes. Consultas resueltas automáticamente. Soporte 24/7.',
 }
 
 export default function ChatbotsAgentesPage() {
@@ -53,7 +53,7 @@ export default function ChatbotsAgentesPage() {
     },
     {
       icon: '🤖',
-      title: '60-80% Resolución',
+      title: 'Resolución automática',
       description: 'Mayoría de consultas se resuelven sin intervención humana',
     },
     {
@@ -64,7 +64,7 @@ export default function ChatbotsAgentesPage() {
     {
       icon: '📈',
       title: 'Aprendizaje Continuo',
-      description: 'Mejora cada semana basado en conversaciones reales',
+      description: 'Mejora continuamente basado en conversaciones reales',
     },
   ]
 
@@ -105,7 +105,7 @@ export default function ChatbotsAgentesPage() {
     <div>
       <Hero
         title="Agentes IA que atienden tu negocio 24/7"
-        subtitle="60-80% de consultas resueltas sin intervención humana"
+        subtitle="Consultas resueltas automáticamente sin intervención humana"
         description="Servicio al cliente inteligente, sin empleados, escalable a millones de conversaciones simultáneas."
         cta={{
           text: 'Solicita una Demostración Gratuita',
@@ -133,7 +133,7 @@ export default function ChatbotsAgentesPage() {
           <h2>Nuestra solución: Agentes conversacionales que resuelven</h2>
           <p>
             IA que entiende contexto, accede a datos reales, toma acciones en tus sistemas.
-            Resolver 60-80% de consultas sin intervención humana. Escalable a millones de
+            Resolver consultas sin intervención humana. Escalable a millones de
             conversaciones.
           </p>
 
@@ -210,7 +210,7 @@ export default function ChatbotsAgentesPage() {
       <Schema
         schema={serviceSchema(
           'Chatbots y Agentes IA',
-          'Chatbots y agentes inteligentes para soporte 24/7. 80%+ de resolución automática.',
+          'Chatbots y agentes inteligentes para soporte 24/7. Resolución automática de consultas.',
           'https://customailab.com/servicios/chatbots-agentes'
         )}
       />
@@ -221,11 +221,11 @@ export default function ChatbotsAgentesPage() {
           {
             question: '¿Cuál es el costo de un chatbot IA?',
             answer:
-              'Desde €8K para chatbots básicos a €40K+ para agentes complejos multi-canal. Hosting incluido.',
+              'El costo depende de complejidad y funcionalidades. Solicita una auditoría gratuita para estimación exacta.',
           },
           {
             question: '¿Cuánto tiempo toma desarrollar el chatbot?',
-            answer: '8-12 semanas. MVP en 4 semanas. Optimización iterativa después.',
+            answer: 'Desde rápidamente hasta semanas. Depende de complejidad. Usamos metodología ágil con demos frecuentes.',
           },
           {
             question: '¿Soporta varios idiomas?',
@@ -245,7 +245,7 @@ export default function ChatbotsAgentesPage() {
           {
             question: '¿Cuál es el ahorro típico?',
             answer:
-              'Reducción de costos de soporte: 40-60%. Mejora de satisfacción: +25%. Resolución de tickets: -3 horas promedio.',
+              'Reducción de costos de soporte significativa. Mejora de satisfacción. Resolución más rápida de tickets.',
           },
         ])}
       />

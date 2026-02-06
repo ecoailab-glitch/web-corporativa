@@ -8,7 +8,7 @@ import { serviceSchema, faqPageSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Desarrollo Web y App con IA | CUSTOM AI LAB SOLUTIONS',
-  description: 'Aplicaciones inteligentes. Desde cero o integradas en tu producto. MVP en 4-6 semanas.',
+  description: 'Aplicaciones inteligentes. Desde cero o integradas en tu producto. MVP rápido.',
 }
 
 export default function DesarrolloWebAppIAPage() {
@@ -16,12 +16,12 @@ export default function DesarrolloWebAppIAPage() {
     {
       question: '¿Cuál es el costo de una app con IA?',
       answer:
-        'Proyecto típico cuesta €15K-€50K. MVPs simples desde €8K. Proyectos enterprise €100K+. Primero hacemos proposal tras entender requerimientos.',
+        'Proyecto típico con presupuesto variable. Solicita una auditoría gratuita para estimación exacta.',
     },
     {
       question: '¿Cuánto tarda desarrollar una app con IA?',
       answer:
-        'MVP funcional en 4-6 semanas. Versión completa 8-12 semanas. Depende de complejidad. Usamos metodología ágil con demos cada 2 semanas.',
+        'MVP funcional rápidamente. Versión completa después. Depende de complejidad. Usamos metodología ágil con demos frecuentes.',
     },
     {
       question: '¿Qué tech stack usan?',
@@ -36,7 +36,7 @@ export default function DesarrolloWebAppIAPage() {
     {
       question: '¿Qué sucede después del desarrollo? ¿Soporte?',
       answer:
-        'Incluimos 3 meses de soporte técnico post-deploy. Bugs fixes, optimización de performance, pequeños cambios. Luego puedes mantener con tu equipo o contratar soporte continuo.',
+        'Incluimos soporte técnico post-deploy. Bugs fixes, optimización, cambios menores. Luego mantienes con tu equipo o contratas soporte continuo.',
     },
     {
       question: '¿Necesito un equipo técnico interno?',
@@ -48,8 +48,8 @@ export default function DesarrolloWebAppIAPage() {
   const benefits = [
     {
       icon: '⚡',
-      title: '3-4x Más Rápido',
-      description: 'MVP en 4-6 semanas vs 6 meses tradicionales',
+      title: 'Más rápido que lo tradicional',
+      description: 'MVP rápido vs desarrollo tradicional',
     },
     {
       icon: '🧠',

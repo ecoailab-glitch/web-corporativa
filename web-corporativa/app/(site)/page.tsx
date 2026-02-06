@@ -13,21 +13,21 @@ export default function Home() {
     {
       title: 'IA en Procesos',
       description: 'Automatiza tareas manuales 24/7. Sin errores, sin cansancio.',
-      benefits: ['40-60% ahorro de tiempo', 'Cero errores humanos', 'Escalabilidad infinita'],
+      benefits: ['Ahorro de tiempo significativo', 'Cero errores humanos', 'Escalabilidad infinita'],
       href: '/servicios/ia-procesos',
       icon: '⚙️',
     },
     {
       title: 'Chatbots y Agentes IA',
       description: 'Soporte al cliente inteligente disponible 24/7 en cualquier idioma.',
-      benefits: ['60-80% consultas resueltas automáticamente', 'Disponibilidad 24/7', 'Integración con tu CRM'],
+      benefits: ['Consultas resueltas automáticamente', 'Disponibilidad 24/7', 'Integración con tu CRM'],
       href: '/servicios/chatbots-agentes',
       icon: '💬',
     },
     {
       title: 'Desarrollo Web/App IA',
-      description: 'Aplicaciones inteligentes. MVP en 4-6 semanas sin equipo ML.',
-      benefits: ['3-4x más rápido que lo tradicional', 'Funcionalidades de IA integradas', 'Escalable desde el inicio'],
+      description: 'Aplicaciones inteligentes. MVP rápido sin equipo ML.',
+      benefits: ['Más rápido que lo tradicional', 'Funcionalidades de IA integradas', 'Escalable desde el inicio'],
       href: '/servicios/desarrollo-web-app-ia',
       icon: '🚀',
     },
@@ -36,17 +36,17 @@ export default function Home() {
   const benefits = [
     {
       icon: '📊',
-      title: '40-60% Ahorro',
+      title: 'Mayor Ahorro',
       description: 'Reducción de tareas manuales y costos operacionales',
     },
     {
       icon: '⏰',
-      title: '24/7 Disponible',
+      title: 'Disponible 24/7',
       description: 'Soluciones que trabajan sin parar, sin empleados adicionales',
     },
     {
       icon: '💰',
-      title: 'ROI en 90 días',
+      title: 'ROI Medible',
       description: 'Resultados medibles. Inversión que se paga rápidamente',
     },
     {
@@ -84,10 +84,10 @@ export default function Home() {
       {/* Hero Section */}
       <Hero
         title="Automatiza tu empresa con IA"
-        subtitle="Reduce costos, genera ingresos. Implementado en 90 días."
+        subtitle="Reduce costos, genera ingresos. Implementación rápida."
         description="CUSTOM AI LAB SOLUTIONS lleva inteligencia artificial a tu negocio. Sin equipo técnico. Sin inversión en R&D. Soluciones probadas y escalables."
         cta={{
-          text: 'Solicita tu Auditoría IA Gratuita (15 min)',
+          text: 'Solicita tu Auditoría IA Gratuita',
           href: '/contacto',
         }}
         centered={false}
@@ -132,7 +132,7 @@ export default function Home() {
           <h2>Nuestros Servicios</h2>
           <p>
             CUSTOM AI LAB SOLUTIONS implementa soluciones IA que se integran con tus sistemas existentes y
-            generan ROI en 3-6 meses.
+            generan ROI medible.
           </p>
 
           <BenefitsList benefits={benefits} columns={4} />
@@ -147,19 +147,19 @@ export default function Home() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem', marginTop: '2rem' }}>
             <div style={{ textAlign: 'center' }}>
               <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>1️⃣</div>
-              <h3>Auditoría (semana 1)</h3>
+              <h3>Auditoría Inicial</h3>
               <p>Análisis de procesos, identificación de oportunidades, estimación de ROI</p>
             </div>
 
             <div style={{ textAlign: 'center' }}>
               <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>2️⃣</div>
-              <h3>Implementación (semana 2-8)</h3>
+              <h3>Implementación y Testing</h3>
               <p>Desarrollo, integración con sistemas, testing y ajustes</p>
             </div>
 
             <div style={{ textAlign: 'center' }}>
               <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>3️⃣</div>
-              <h3>Escalado (semana 9+)</h3>
+              <h3>Optimización Continua</h3>
               <p>Training al equipo, soporte técnico, optimización continua</p>
             </div>
           </div>
@@ -186,7 +186,7 @@ export default function Home() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '2rem' }}>
             <Testimonial
-              quote="Implementaron un agente que resuelve el 70% de nuestras consultas sin intervención humana."
+              quote="Implementaron un agente que resuelve la mayoría de nuestras consultas sin intervención humana."
               author="Carlos M."
                 role="CTO"
                 company="Empresa Tech"
@@ -207,7 +207,7 @@ export default function Home() {
             />
 
             <Testimonial
-              quote="La solución fue implementada rápidamente y generó ROI en los primeros 3 meses."
+              quote="La solución fue implementada rápidamente y generó ROI desde el inicio."
               author="Sofía D."
                 role="Directora General"
                 company="Startup Tech"
@@ -219,8 +219,7 @@ export default function Home() {
       {/* Partners */}
       <section id="partners" className="section section-light">
         <div className="container">
-          <h2 style={{ textAlign: 'center', marginBottom: '0.5rem' }}>Empresas que confían en nosotros</h2>
-          <p style={{ textAlign: 'center', color: '#666', marginBottom: '1rem' }}>Organizaciones con las que colaboramos</p>
+          <h2 style={{ textAlign: 'center', marginBottom: '0.5rem' }}>Partners y Empresas que confían en nosotros</h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', gap: '2rem', alignItems: 'center', justifyItems: 'center' }}>
             {partners.map((partner, index) => (

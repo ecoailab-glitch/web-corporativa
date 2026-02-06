@@ -39,23 +39,23 @@ export default function Chatbot() {
     const knowledge: Record<string, Record<string, string>> = {
       servicios: {
         'ia en procesos|automatización|procesos manuales': 
-          '⚙️ **IA en Procesos**: Automatización de tareas manuales 24/7. Ideal para:\n• Clasificación de datos\n• Validación de documentos\n• Entrada de datos automática\n• Decisiones en tiempo real\n\nResultados: 40-60% ahorro de tiempo, cero errores humanos.\n\n¿Tienes procesos manuales que automatizar?',
+          '⚙️ **IA en Procesos**: Automatización de tareas manuales 24/7. Ideal para:\n• Clasificación de datos\n• Validación de documentos\n• Entrada de datos automática\n• Decisiones en tiempo real\n\nResultados: Ahorro significativo de tiempo, cero errores humanos.\n\n¿Tienes procesos manuales que automatizar?',
         
         'chatbot|agente|soporte|consultas':
-          '💬 **Chatbots & Agentes IA**: Soporte inteligente 24/7 en cualquier idioma.\n• Resuelve 60-80% de consultas sin intervención\n• Integración con CRM y bases de datos\n• Disponibilidad 24/7 sin costos operacionales\n• Escalable a millones de conversaciones\n\n¿Necesitas mejorar tu atención al cliente?',
+          '💬 **Chatbots & Agentes IA**: Soporte inteligente 24/7 en cualquier idioma.\n• Resuelve la mayoría de consultas sin intervención\n• Integración con CRM y bases de datos\n• Disponibilidad 24/7 sin costos operacionales\n• Escalable a millones de conversaciones\n\n¿Necesitas mejorar tu atención al cliente?',
         
         'desarrollo|app|producto|mvp|web':
-          '🚀 **Desarrollo Web/App IA**: Aplicaciones inteligentes en 4-6 semanas.\n• MVP funcional sin equipo ML interno\n• Stack moderno (React, Node, Python)\n• Funcionalidades de IA integradas desde el inicio\n• Escalable desde día 1\n\n¿Tienes idea de qué producto construir?'
+          '🚀 **Desarrollo Web/App IA**: Aplicaciones inteligentes rápidamente.\n• MVP funcional sin equipo ML interno\n• Stack moderno (React, Node, Python)\n• Funcionalidades de IA integradas desde el inicio\n• Escalable desde día 1\n\n¿Tienes idea de qué producto construir?'
       },
       
       precios: {
         'precio|costo|cuánto cuesta|inversión|presupuesto':
-          '💰 **Precios**: Proyectos típicos €5K-€20K según complejidad.\n\nProceso:\n1. Auditoría gratuita (15 min) - Análisis de tu caso\n2. Estimación exacta - ROI y timeline\n3. Plan personalizado - Sin sorpresas\n\nLos clientes generan ROI en 3-6 meses. ¿Te interesa agendar una auditoría gratuita?'
+          '💰 **Precios**: Proyectos típicos se adaptan a tu presupuesto.\n\nProceso:\n1. Auditoría gratuita - Análisis de tu caso\n2. Estimación exacta - ROI y timeline\n3. Plan personalizado - Sin sorpresas\n\nLos clientes ven resultados medibles. ¿Te interesa agendar una auditoría gratuita?'
       },
       
       tiempo: {
         'cuánto tarda|tiempo|implementación|cuándo empezamos|timeline':
-          '⏱️ **Timeline**: 4-8 semanas de auditoría a producción.\n\nFases:\n• Semana 1: Auditoría y análisis\n• Semanas 2-8: Desarrollo e integración\n• Semanas 9+: Escalado y optimización\n\nMVP funcional en las primeras 2 semanas. ¿Cuál es tu proyecto?'
+          '⏱️ **Timeline**: Desde auditoría a producción, trabajamos a ritmo acelerado.\n\nFases:\n• Inicial: Auditoría y análisis\n• Desarrollo: Desarrollo e integración\n• Optimización: Escalado y optimización\n\nMVP funcional en fases tempranas. ¿Cuál es tu proyecto?'
       },
       
       equipo: {
@@ -65,7 +65,7 @@ export default function Chatbot() {
       
       roi: {
         'roi|resultados|casos|éxito|generamos|ahorro':
-          '📊 **ROI Comprobado**: 25+ soluciones implementadas, €5M+ en valor generado.\n\nNuestros clientes:\n• Generan ROI en 3-6 meses\n• Ahorran 40-60% en costos\n• Reducen time-to-market 3-4x\n• Escalan sin expandir equipo\n\n¿Quieres saber el ROI para tu caso?'
+          '📊 **ROI Comprobado**: Múltiples soluciones implementadas con éxito.\n\nNuestros clientes:\n• Generan ROI medible\n• Reducen costos operacionales\n• Reducen time-to-market significativamente\n• Escalan sin expandir equipo\n\n¿Quieres saber el ROI para tu caso?'
       },
       
       industrias: {
@@ -80,7 +80,7 @@ export default function Chatbot() {
       
       soporte: {
         'soporte|post-lanzamiento|mantenimiento|después|training':
-          '🤝 **Post-Lanzamiento**: Incluye 3 meses de soporte técnico.\n\n• Monitoreo de solución\n• Ajustes y optimizaciones\n• Training a tu equipo\n• Documentación completa\n\nLuego puedes mantenerlo con tu equipo o contratar soporte continuo.'
+          '🤝 **Post-Lanzamiento**: Incluye soporte técnico completo.\n\n• Monitoreo de solución\n• Ajustes y optimizaciones\n• Training a tu equipo\n• Documentación completa\n\nLuego puedes mantenerlo con tu equipo o contratar soporte continuo.'
       },
       
       errores: {
@@ -90,12 +90,12 @@ export default function Chatbot() {
       
       auditoria: {
         'auditoría|consulta|asesoría|gratis|gratuita|libre':
-          '🔍 **Auditoría Gratuita**: 15 minutos sin compromiso.\n\nAnalizamos:\n• Procesos actuales\n• Oportunidades de IA\n• Estimación de ROI\n• Timeline personalizado\n\n¿Te gustaría agendar una? Clic en "Contactar equipo" →'
+          '🔍 **Auditoría Gratuita**: Sin compromiso.\n\nAnalizamos:\n• Procesos actuales\n• Oportunidades de IA\n• Estimación de ROI\n• Timeline personalizado\n\n¿Te gustaría agendar una? Clic en "Contactar equipo" →'
       },
       
       beneficios: {
         'beneficio|ventaja|ahorro|mejora|eficiencia|escalabilidad':
-          '⚡ **Beneficios Clave**:\n• 40-60% ahorro de tiempo\n• Disponibilidad 24/7\n• ROI en 90 días\n• Sin R&D interno\n• Escalabilidad infinita\n• Cero errores humanos\n• Decisiones en tiempo real\n\n¿Cuál es tu mayor reto?'
+          '⚡ **Beneficios Clave**:\n• Ahorro de tiempo significativo\n• Disponibilidad 24/7\n• ROI Medible\n• Sin R&D interno\n• Escalabilidad infinita\n• Cero errores humanos\n• Decisiones en tiempo real\n\n¿Cuál es tu mayor reto?'
       },
       
       contacto: {
