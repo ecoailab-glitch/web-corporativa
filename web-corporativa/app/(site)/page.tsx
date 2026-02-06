@@ -126,19 +126,6 @@ export default function Home() {
 
       {/* Partners (moved) - removed here and reinserted before CTA */}
 
-      {/* Nuestra Solución */}
-      <section className="section section-light">
-        <div className="container">
-          <h2>Nuestros Servicios</h2>
-          <p>
-            CUSTOM AI LAB SOLUTIONS implementa soluciones IA que se integran con tus sistemas existentes y
-            generan ROI medible.
-          </p>
-
-          <BenefitsList benefits={benefits} columns={4} />
-        </div>
-      </section>
-
       {/* Cómo Funciona */}
       <section className="section section-light">
         <div className="container">
