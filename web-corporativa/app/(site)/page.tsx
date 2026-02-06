@@ -124,32 +124,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Partners */}
-      <section id="partners" className="section section-light">
-        <div className="container">
-          <h2 style={{ textAlign: 'center', marginBottom: '0.5rem' }}>Empresas colaboradoras</h2>
-          <p style={{ textAlign: 'center', color: '#666', marginBottom: '1.5rem' }}>Organizaciones con las que colaboramos</p>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '2rem', alignItems: 'center', justifyItems: 'center' }}>
-            {partners.map((partner, index) => (
-              <div key={index} style={{ textAlign: 'center' }}>
-                <img
-                  src={partner.image}
-                  alt={partner.name}
-                  style={{
-                    width: '100%',
-                    maxWidth: '180px',
-                    height: 'auto',
-                    objectFit: 'contain',
-                    marginBottom: '0.5rem',
-                  }}
-                />
-                <p style={{ fontSize: '0.9rem', color: '#666' }}>{partner.name}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Partners (moved) - removed here and reinserted before CTA */}
 
       {/* Nuestra Solución */}
       <section className="section section-light">
@@ -237,6 +212,31 @@ export default function Home() {
                 role="Directora General"
                 company="Startup Tech"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Partners */}
+      <section id="partners" className="section section-light">
+        <div className="container">
+          <h2 style={{ textAlign: 'center', marginBottom: '0.5rem' }}>Empresas que confían en nosotros</h2>
+          <p style={{ textAlign: 'center', color: '#666', marginBottom: '1rem' }}>Organizaciones con las que colaboramos</p>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', gap: '2rem', alignItems: 'center', justifyItems: 'center' }}>
+            {partners.map((partner, index) => (
+              <div key={index} style={{ textAlign: 'center' }}>
+                <img
+                  src={partner.image}
+                  alt={partner.name}
+                  style={{
+                    width: '140px',
+                    height: '70px',
+                    objectFit: 'contain',
+                    marginBottom: '0',
+                  }}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
