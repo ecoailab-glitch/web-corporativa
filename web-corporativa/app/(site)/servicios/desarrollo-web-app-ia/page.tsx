@@ -53,7 +53,7 @@ export default function DesarrolloWebAppIAPage() {
     },
     {
       icon: '🧠',
-      title: 'Features IA sin Equipo ML',
+      title: 'Funcionalidades de IA sin equipo ML',
       description: 'Expertise ML incluida. Tu crecimiento acelerado.',
     },
     {
@@ -106,7 +106,7 @@ export default function DesarrolloWebAppIAPage() {
       <Hero
         title="Aplicaciones inteligentes. Desde cero o en tu producto."
         subtitle="MVP en 4-6 semanas sin equipo ML interno"
-        description="Stack moderno, cloud-native, features de IA integradas desde el diseño. Escalable para millones de usuarios."
+        description="Stack moderno, cloud-native, funcionalidades de IA integradas desde el diseño. Escalable para millones de usuarios."
         cta={{
           text: 'Solicita una Consulta Gratuita',
           href: '/contacto',
@@ -118,7 +118,7 @@ export default function DesarrolloWebAppIAPage() {
         <div className="container">
           <h2>El problema: Competidores con IA ya te llevan ventaja</h2>
           <p>
-            Tus usuarios esperan experiencias inteligentes. Features de IA toman tiempo y dinero
+            Tus usuarios esperan experiencias inteligentes. Las funcionalidades de IA requieren tiempo y recursos
             desarrollar. Sin equipo ML interno, estás bloqueado. Tu competencia ya integró IA y les
             va mejor.
           </p>

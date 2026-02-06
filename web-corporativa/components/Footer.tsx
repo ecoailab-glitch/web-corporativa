@@ -32,7 +32,7 @@ export default function Footer() {
                 <Link href="/blog">Blog</Link>
               </li>
               <li>
-                <Link href="/sobre-nosotros">Sobre Nosotros</Link>
+                <Link href="/sobre-nosotros">Sobre nosotros</Link>
               </li>
               <li>
                 <Link href="/contacto">Contacto</Link>
@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
 
           <div className={styles.section}>
-            <h3>Legal</h3>
+            <h3>Aviso legal</h3>
             <ul>
               <li>
                 <Link href="/privacidad">Política de Privacidad</Link>

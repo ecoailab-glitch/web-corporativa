@@ -25,7 +25,7 @@ export default function ServiciosPage() {
     },
     {
       title: 'Desarrollo Web/App IA',
-      description: 'Aplicaciones inteligentes. MVP en 4-6 semanas. Features de IA sin equipo ML interno.',
+      description: 'Aplicaciones inteligentes. MVP en 4-6 semanas. Funcionalidades de IA sin equipo ML interno.',
       benefits: ['3-4x más rápido', 'Stack moderno y escalable', 'Expertise ML incluida'],
       href: '/servicios/desarrollo-web-app-ia',
       icon: '🚀',

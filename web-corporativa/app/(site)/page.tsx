@@ -27,7 +27,7 @@ export default function Home() {
     {
       title: 'Desarrollo Web/App IA',
       description: 'Aplicaciones inteligentes. MVP en 4-6 semanas sin equipo ML.',
-      benefits: ['3-4x más rápido que lo tradicional', 'Features IA integradas', 'Escalable desde el inicio'],
+      benefits: ['3-4x más rápido que lo tradicional', 'Funcionalidades de IA integradas', 'Escalable desde el inicio'],
       href: '/servicios/desarrollo-web-app-ia',
       icon: '🚀',
     },
@@ -163,29 +163,29 @@ export default function Home() {
             <Testimonial
               quote="Implementaron un agente que resuelve el 70% de nuestras consultas sin intervención humana."
               author="Carlos M."
-              role="CTO"
-              company="Tech Company"
+                role="CTO"
+                company="Empresa Tech"
             />
 
             <Testimonial
               quote="La automatización nos permitió escalar operaciones sin expandir el equipo."
               author="María L."
-              role="Operations Manager"
-              company="Tech Company"
+                role="Responsable de Operaciones"
+                company="Empresa Tech"
             />
 
             <Testimonial
               quote="Integraron IA en nuestro producto. El engagement subió significativamente."
               author="Juan P."
-              role="Product Manager"
-              company="Tech Company"
+                role="Responsable de Producto"
+                company="Empresa Tech"
             />
 
             <Testimonial
               quote="La solución fue implementada rápidamente y generó ROI en los primeros 3 meses."
-              author="Sophie D."
-              role="CEO"
-              company="Tech Startup"
+              author="Sofía D."
+                role="Directora General"
+                company="Startup Tech"
             />
           </div>
         </div>

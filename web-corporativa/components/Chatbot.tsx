@@ -45,7 +45,7 @@ export default function Chatbot() {
           '💬 **Chatbots & Agentes IA**: Soporte inteligente 24/7 en cualquier idioma.\n• Resuelve 60-80% de consultas sin intervención\n• Integración con CRM y bases de datos\n• Disponibilidad 24/7 sin costos operacionales\n• Escalable a millones de conversaciones\n\n¿Necesitas mejorar tu atención al cliente?',
         
         'desarrollo|app|producto|mvp|web':
-          '🚀 **Desarrollo Web/App IA**: Aplicaciones inteligentes en 4-6 semanas.\n• MVP funcional sin equipo ML interno\n• Stack moderno (React, Node, Python)\n• Features IA integradas desde el inicio\n• Escalable desde día 1\n\n¿Tienes idea de qué producto construir?'
+          '🚀 **Desarrollo Web/App IA**: Aplicaciones inteligentes en 4-6 semanas.\n• MVP funcional sin equipo ML interno\n• Stack moderno (React, Node, Python)\n• Funcionalidades de IA integradas desde el inicio\n• Escalable desde día 1\n\n¿Tienes idea de qué producto construir?'
       },
       
       precios: {
