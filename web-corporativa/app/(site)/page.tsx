@@ -125,9 +125,10 @@ export default function Home() {
       </section>
 
       {/* Partners */}
-      <section className="section section-light">
+      <section id="partners" className="section section-light">
         <div className="container">
-          <h2 style={{ textAlign: 'center', marginBottom: '3rem' }}>Partners</h2>
+          <h2 style={{ textAlign: 'center', marginBottom: '0.5rem' }}>Empresas colaboradoras</h2>
+          <p style={{ textAlign: 'center', color: '#666', marginBottom: '1.5rem' }}>Organizaciones con las que colaboramos</p>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '2rem', alignItems: 'center', justifyItems: 'center' }}>
             {partners.map((partner, index) => (
