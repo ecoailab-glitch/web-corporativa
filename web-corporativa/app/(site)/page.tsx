@@ -56,6 +56,29 @@ export default function Home() {
     },
   ]
 
+  const partners = [
+    {
+      name: 'Menttoriza',
+      image: '/images/partners/logo-menttoriza.png',
+    },
+    {
+      name: 'KoKoLife',
+      image: '/images/partners/logo-kokolife.png',
+    },
+    {
+      name: 'EcoAI Lab',
+      image: '/images/partners/logo-ecoai-lab.png',
+    },
+    {
+      name: 'Unicornio Solitario',
+      image: '/images/partners/logo-unicornio-solitario.png',
+    },
+    {
+      name: 'UvEmpren',
+      image: '/images/partners/logo-uvempren.png',
+    },
+  ]
+
   return (
     <div>
       {/* Hero Section */}
@@ -97,6 +120,32 @@ export default function Home() {
               title="Desarrollo Web/App IA"
               description="Aplicaciones inteligentes. MVP en 4-6 semanas."
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Partners */}
+      <section className="section section-light">
+        <div className="container">
+          <h2 style={{ textAlign: 'center', marginBottom: '3rem' }}>Partners</h2>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '2rem', alignItems: 'center', justifyItems: 'center' }}>
+            {partners.map((partner, index) => (
+              <div key={index} style={{ textAlign: 'center' }}>
+                <img
+                  src={partner.image}
+                  alt={partner.name}
+                  style={{
+                    width: '100%',
+                    maxWidth: '180px',
+                    height: 'auto',
+                    objectFit: 'contain',
+                    marginBottom: '0.5rem',
+                  }}
+                />
+                <p style={{ fontSize: '0.9rem', color: '#666' }}>{partner.name}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
